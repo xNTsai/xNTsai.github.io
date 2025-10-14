@@ -173,7 +173,7 @@ h3 {
 
 /* Left side: Profile info only (wider for 4 icons in one line) */
 .intro-photo {
-    flex: 0 0 320px;
+    flex: 0 0 280px;
     text-align: center;
 }
 
