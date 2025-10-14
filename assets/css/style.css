@@ -8,7 +8,7 @@
     --heading-color: #f0f6fc;
     --subheading-color: #c9d1d9;
     --muted-color: #8b949e;
-    --header-bg: #161b22;
+    --header-bg: #1c1c1c;
 }
 
 /* Light Theme Variables */
@@ -21,7 +21,7 @@
     --heading-color: #1f2328;
     --subheading-color: #656d76;
     --muted-color: #656d76;
-    --header-bg: #f6f8fa;
+    --header-bg: #e8e8e8;
 }
 
 /* Basic Styles */
@@ -171,9 +171,9 @@ h3 {
     margin-bottom: 40px;
 }
 
-/* Left side: Profile info only (slightly wider for 4 icons) */
+/* Left side: Profile info only (wider for 4 icons in one line) */
 .intro-photo {
-    flex: 0 0 230px;
+    flex: 0 0 260px;
     text-align: center;
 }
 
