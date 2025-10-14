@@ -8,7 +8,7 @@
     --heading-color: #f0f6fc;
     --subheading-color: #c9d1d9;
     --muted-color: #8b949e;
-    --header-bg: #1c1c1c;
+    --header-bg: #131313;
 }
 
 /* Light Theme Variables */
@@ -21,7 +21,7 @@
     --heading-color: #1f2328;
     --subheading-color: #656d76;
     --muted-color: #656d76;
-    --header-bg: #7f7c7c;
+    --header-bg: #dedddd;
 }
 
 /* Basic Styles */
@@ -303,7 +303,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .two-column-section h3 {
@@ -332,8 +332,18 @@ h3 {
 }
 
 /* Education List */
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .education-list li {
     margin-bottom: 15px;
+}
+
+.education-list li::before {
+    content: none;
 }
 
 .education-list .course {
