@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cheng‑En (Johnny) Tsai</title>
+  <meta name="description" content="Personal website of Cheng‑En (Johnny) Tsai – Quantum Computing, QML, EDA." />
+  <link rel="preload" href="assets/img/profile.jpg" as="image">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">CT</a>
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="news.html">News</a>
+        <a href="https://github.com/xNTsai" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero split: left profile + links, right about + CV button -->
+    <section class="hero">
+      <div class="hero-left">
+        <img class="avatar" src="assets/img/profile.jpg" alt="Portrait of Cheng‑En (Johnny) Tsai" />
+        <h1>Cheng‑En (Johnny) Tsai</h1>
+        <p class="subtitle">Quantum Circuit Synthesis · QML · EDA/Hardware Automation</p>
+        <ul class="links">
+          <li><a href="mailto:xntsai@ntu.edu.tw">Email</a></li>
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/xntsai/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/xNTsai" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <h2>About me</h2>
+        <p>
+          I'm a senior at NTU EE working on quantum circuit synthesis, quantum
+          federated learning, and EDA/PCB automation. I build tools and theory to
+          reduce overhead for fault‑tolerant quantum computing and enable scalable,
+          distributed architectures.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="cv/Cheng-En_Tsai_CV.pdf" download>Download CV</a>
+          <a class="btn ghost" href="projects.html">Explore projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2>Education</h2>
+      <div class="timeline">
+        <article class="item">
+          <div class="item-left">
+            <div class="item-title">National Taiwan University (NTU), B.S. Electrical Engineering</div>
+            <div class="item-meta">Taipei, Taiwan · 2021 — 2025 (expected)</div>
+          </div>
+          <div class="item-right">
+            <ul class="tags">
+              <li>Quantum Computing</li>
+              <li>Quantum ML</li>
+              <li>EDA</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Highlights / Quick links -->
+    <section class="section two-col">
+      <div>
+        <h3>Selected highlights</h3>
+        <ul class="bullets">
+          <li>Google Hardware Eng. intern: schematic DRC automation (Python).</li>
+          <li>QSyn contributor: quantum circuit synthesis framework.</li>
+          <li>LossAgg‑QFL: communication‑efficient QFL via loss aggregation.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="bullets">
+          <li><a href="publications.html">Publications & preprints</a></li>
+          <li><a href="projects.html">Project gallery</a></li>
+          <li><a href="news.html">News & updates</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Cheng‑En (Johnny) Tsai · Built with vanilla HTML/CSS/JS · <a href="https://github.com/xNTsai" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

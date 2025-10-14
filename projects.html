@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Cheng‑En (Johnny) Tsai</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">CT</a>
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="news.html">News</a>
+        <a href="https://github.com/xNTsai" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Projects</h1>
+      <p class="muted">Hover a card for details; click to open a modal with more info.</p>
+      <div id="projectGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-body">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Cheng‑En (Johnny) Tsai</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
+</body>
+</html>
+

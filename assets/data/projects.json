@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Google Schematic DRC Automation",
+    "meta": "Python · PyQt · Cadence Allegro Extracta",
+    "teaser": "Automated ERC/IMP/derating checks with GUI; boosted design correctness.",
+    "description": "Built a Python tool to parse Allegro netlists and board data, implemented rule checks (ERC/IMP/derating), and provided a PyQt GUI for cross‑team use.",
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=1200&q=80&auto=format&fit=crop",
+    "tags": ["Python", "EDA", "Automation"],
+    "links": [
+      {"text": "Overview", "href": "#"},
+      {"text": "GitHub", "href": "https://github.com/xNTsai"}
+    ]
+  },
+  {
+    "title": "QSyn — Quantum Circuit Synthesis",
+    "meta": "C++ · T‑Count Minimization · ZX/Clifford+T",
+    "teaser": "Open‑source framework for synthesis and optimization of quantum circuits.",
+    "description": "Developed passes for T‑count reduction (TMerge, H‑gadget, phase polynomial) and experimental ZX‑to‑lattice‑surgery mapping.",
+    "image": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=1200&q=80&auto=format&fit=crop",
+    "tags": ["Quantum", "Compilation", "Optimization"],
+    "links": [
+      {"text": "Code", "href": "https://github.com/xNTsai/Qsyn"}
+    ]
+  },
+  {
+    "title": "LossAgg‑QFL",
+    "meta": "Quantum Federated Learning · SPSA",
+    "teaser": "Loss‑only communication; strong convergence under non‑IID settings.",
+    "description": "Proposed a loss‑aggregation strategy to estimate global gradients via SPSA, reducing comms and measurements by orders of magnitude.",
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=1200&q=80&auto=format&fit=crop",
+    "tags": ["QML", "Federated Learning"],
+    "links": [
+      {"text": "Preprint (soon)", "href": "#"}
+    ]
+  }
+]
+
