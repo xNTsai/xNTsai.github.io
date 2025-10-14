@@ -24,15 +24,17 @@
     </header>
 
     <main>
-      <!-- Hero Section with HugoBox Layout -->
+      <!-- Hero Section: Left profile, Right content -->
       <div class="intro-header">
-        <!-- Left side: Profile + Social Icons -->
+        <!-- Left side: Profile info only -->
         <div class="intro-photo">
           <img src="assets/img/profile.jpg" alt="Cheng-En (Johnny) Tsai" class="profile-pic">
           <div class="portrait-title">
             <h1>Cheng-En Tsai</h1>
             <h3>Senior Student</h3>
-            <div class="institution">National Taiwan University</div>
+            <div class="institution">
+              <a href="https://www.ntu.edu.tw/" target="_blank">National Taiwan University</a>
+            </div>
           </div>
           <div class="social-icons">
             <a href="mailto:xntsai@ntu.edu.tw" title="Email" class="social-icon email">
@@ -53,43 +55,37 @@
           </div>
         </div>
         
-        <!-- Right side: About Me + Download CV -->
+        <!-- Right side: About Me + Download CV + Interests/Education -->
         <div class="intro-text">
           <h2>About Me</h2>
           <p>
             <strong>I am Cheng En Tsai (蔡承恩), currently a senior undergraduate majoring in Electrical Engineering at National Taiwan University (NTU). My academic interests lie at the intersection of quantum information and computation, as well as machine learning. At NTU, I have been conducting research on Distributed Quantum Machine Learning under the guidance of Prof. <a href="http://www.hao-chung.info/" target="_blank">Hao Chung Cheng</a>, and on Quantum Circuit Synthesis with Prof. <a href="https://cc.ee.ntu.edu.tw/~ric/" target="_blank">Chung Yang (Ric) Huang</a>.</strong>
           </p>
+          
           <a href="cv/Cheng-En_Tsai_CV.pdf" class="btn-download" download>
-            <svg class="download-icon" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M14.707 7.793a1 1 0 00-1.414 0L11 10.086V1.5a1 1 0 00-2 0v8.586L6.707 7.793a1 1 0 10-1.414 1.414l4 4a1 1 0 001.416 0l4-4a1 1 0 00-.002-1.414z"/>
-              <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 01-4.95 0L4.55 12H2a2 2 0 00-2 2v4a2 2 0 002 2h16a2 2 0 002-2v-4a2 2 0 00-2-2zm-3 5a1 1 0 110-2 1 1 0 010 2z"/>
-            </svg>
+            <i class="fas fa-download"></i>
             Download CV
           </a>
-        </div>
-      </div>
 
-      <!-- Interests and Education -->
-      <div class="two-column-section">
-        <div>
-          <h3>Interests</h3>
-          <ul>
-            <li>Quantum Information</li>
-            <li>Quantum Computing</li>
-            <li>Machine Learning</li>
-            <li>Electronic Design Automation</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Education</h3>
-          <div class="education-item">
-            <svg class="education-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84 51.39 51.39 0 00-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/>
-            </svg>
+          <!-- Interests and Education within right column -->
+          <div class="two-column-section">
             <div>
-              <p class="course">BSc Electrical Engineering</p>
-              <p class="institution-name">National Taiwan University</p>
-              <p class="year">2021 — 2025 (expected)</p>
+              <h3>Interests</h3>
+              <ul>
+                <li>Quantum Information</li>
+                <li>Quantum Computing</li>
+                <li>Machine Learning</li>
+                <li>Electronic Design Automation</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Education</h3>
+              <ul class="education-list">
+                <li>
+                  <div class="course">BSc Electrical Engineering</div>
+                  <div class="institution-name">National Taiwan University</div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
