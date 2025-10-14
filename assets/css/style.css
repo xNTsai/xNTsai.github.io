@@ -21,7 +21,7 @@
     --heading-color: #1f2328;
     --subheading-color: #656d76;
     --muted-color: #656d76;
-    --header-bg: #e8e8e8;
+    --header-bg: #7f7c7c;
 }
 
 /* Basic Styles */
@@ -173,7 +173,7 @@ h3 {
 
 /* Left side: Profile info only (wider for 4 icons in one line) */
 .intro-photo {
-    flex: 0 0 260px;
+    flex: 0 0 300px;
     text-align: center;
 }
 
