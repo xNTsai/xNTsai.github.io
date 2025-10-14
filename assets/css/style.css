@@ -122,34 +122,244 @@ nav a:last-child {
 
 /* Main Content */
 h1, h2, h3 {
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 10px;
     color: var(--heading-color);
     transition: color 0.3s ease, border-color 0.3s ease;
 }
-h1 { font-size: 2em; }
-h2 { font-size: 1.6em; }
-h3 { font-size: 1.3em; color: var(--subheading-color); }
+h1 { 
+    font-size: 2em;
+    margin: 10px 0;
+}
+h2 { 
+    font-size: 1.6em;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+h3 { 
+    font-size: 1.3em;
+    color: var(--subheading-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
 
-/* Two-column layout for header */
+/* HugoBox-style Two-column layout for header */
 .intro-header {
     display: flex;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+    gap: 40px;
     margin-bottom: 40px;
 }
-.intro-text {
-    flex: 3;
-}
+
+/* Left side: Photo + Name + Icons */
 .intro-photo {
-    flex: 1;
+    flex: 0 0 auto;
     text-align: center;
+    min-width: 200px;
 }
+
 .profile-pic {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
+    margin: 0 auto 15px;
+    border: 3px solid var(--border-color);
+}
+
+.portrait-title {
+    margin-bottom: 15px;
+}
+
+.portrait-title h1 {
+    font-size: 1.8em;
+    margin: 10px 0 5px;
+    border-bottom: none;
+}
+
+.portrait-title h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 5px 0;
+    border-bottom: none;
+    color: var(--subheading-color);
+}
+
+.portrait-title .institution {
+    font-size: 0.95em;
+    color: var(--muted-color);
+    margin-top: 5px;
+}
+
+.portrait-title .institution a {
+    color: var(--link-color);
+}
+
+/* Right side: About + CV button */
+.intro-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.intro-text h2 {
+    margin-top: 0;
+}
+
+.intro-text p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--muted-color);
+    color: var(--bg-color);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+/* Light theme shadow adjustment */
+[data-theme="light"] .social-icon:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual icon colors */
+.social-icon.email:hover {
+    background-color: #ea4335;
+}
+
+.social-icon.scholar:hover {
+    background-color: #4285f4;
+}
+
+.social-icon.github:hover {
+    background-color: #333;
+}
+
+.social-icon.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.social-icon.cv:hover {
+    background-color: #dc3545;
+}
+
+/* Download CV Button */
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-download:hover {
+    background-color: var(--border-color);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+.download-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Two Column Section (Interests + Education) */
+.two-column-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 40px 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.two-column-section h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.two-column-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.two-column-section ul li {
+    padding: 4px 0;
+    margin-bottom: 8px;
+}
+
+.two-column-section ul li::before {
+    content: "•";
+    color: var(--link-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Education Item */
+.education-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.education-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 4px;
+    stroke: var(--link-color);
+}
+
+.education-item .course {
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: var(--heading-color);
+}
+
+.education-item .institution-name {
+    margin: 0 0 2px 0;
+    font-size: 0.95em;
+    color: var(--text-color);
+}
+
+.education-item .year {
+    margin: 0;
+    font-size: 0.9em;
+    color: var(--muted-color);
 }
 
 /* Publication Entry Styles */
@@ -210,70 +420,6 @@ h3 { font-size: 1.3em; color: var(--subheading-color); }
     transition: color 0.3s ease;
 }
 
-/* Social Icons Styles */
-.social-icons {
-    display: flex;
-    gap: 15px;
-    margin: 20px 0;
-    align-items: center;
-}
-
-.social-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--muted-color);
-    color: var(--bg-color);
-    font-size: 20px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.social-icon:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-}
-
-/* Light theme shadow adjustment */
-[data-theme="light"] .social-icon:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Individual icon colors */
-.social-icon.email:hover {
-    background-color: #ea4335;
-}
-
-.social-icon.scholar:hover {
-    background-color: #4285f4;
-}
-
-.social-icon.github:hover {
-    background-color: #333;
-}
-
-.social-icon.linkedin:hover {
-    background-color: #0077b5;
-}
-
-.social-icon.cv:hover {
-    background-color: #dc3545;
-}
-
-/* Contact note styling */
-.contact-note {
-    font-size: 0.9em;
-    color: var(--muted-color);
-    font-style: italic;
-    margin-top: 10px;
-    transition: color 0.3s ease;
-}
-
 /* Lists */
 ul {
     padding-left: 20px;
@@ -292,3 +438,31 @@ footer {
     transition: color 0.3s ease, border-color 0.3s ease;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .intro-photo {
+        width: 100%;
+    }
+    
+    .intro-text {
+        width: 100%;
+    }
+    
+    .two-column-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .publication-entry {
+        flex-direction: column;
+    }
+    
+    .publication-image {
+        max-width: 100%;
+    }
+}
