@@ -1,208 +1,189 @@
 # Cheng-En (Johnny) Tsai — Personal Website
 
-A clean, professional personal website built with vanilla HTML, CSS, and JavaScript. Inspired by modern academic website designs with a focus on simplicity and elegance.
+A clean, simple personal website inspired by [Tsung-Min (Vincent) Pai's website](https://bai1026.github.io/). Built with vanilla HTML, CSS, and JavaScript.
 
 ## ✨ Features
 
-- **Clean & Professional Design** - Inspired by top academic personal websites
-- **Dark/Light Mode Toggle** - Automatic theme switching with localStorage persistence
-- **Responsive Layout** - Works beautifully on all devices
-- **Font Awesome Icons** - Professional icon set for social links
-- **Interactive Project Gallery** - Click-to-expand modal for project details
-- **Simple & Maintainable** - No frameworks, just vanilla HTML/CSS/JS
+- **Simple & Clean Design** - Directly inspired by your senior's website
+- **Dark/Light Mode Toggle** - Beautiful theme switching with localStorage
+- **Responsive Layout** - Works great on all devices
+- **Font Awesome Icons** - Professional social media icons
+- **Easy to Edit** - All content in simple HTML files
 
-## 📁 Folder Structure
+## 📁 Structure
 
 ```
 xNTsai.github.io/
-├─ index.html              # Home page with bio, education, highlights
-├─ projects.html           # Project gallery with modal details
-├─ publications.html       # Publications list
-├─ news.html              # News & updates
-├─ assets/
-│  ├─ css/
-│  │  └─ styles.css       # All styles (dark/light theme)
-│  ├─ js/
-│  │  ├─ main.js          # Utility functions
-│  │  ├─ theme-toggle.js  # Theme switching logic
-│  │  └─ projects.js      # Project grid & modal
-│  ├─ data/
-│  │  └─ projects.json    # Project data (easy to edit!)
-│  └─ img/
-│     └─ profile.jpg      # ⚠️ REPLACE with your photo
-└─ cv/
-   └─ Cheng-En_Tsai_CV.pdf # ⚠️ REPLACE with your CV
+├── index.html              # About Me page
+├── projects.html           # Projects page
+├── publications.html       # Publications page
+├── news.html              # News & updates page
+├── assets/
+│   ├── css/
+│   │   └── style.css      # All styles (copied from your senior)
+│   ├── js/
+│   │   └── theme-toggle.js # Theme switching
+│   └── img/
+│       └── profile.jpg    # ⚠️ REPLACE with your photo
+└── cv/
+    └── Cheng-En_Tsai_CV.pdf # ⚠️ REPLACE with your CV
 ```
-
-## 🎨 Design Features
-
-### Color Scheme
-- **Dark Theme (Default):** Deep black background (#000000) with subtle grays
-- **Light Theme:** Clean white background with professional typography
-- Both themes use carefully selected accent colors for links and interactive elements
-
-### Typography
-- System font stack for optimal performance and native feel
-- Clear hierarchy with thoughtful spacing
-- Responsive font sizes that scale well on all devices
-
-### Layout
-- **Hero Section:** Photo on right, bio and social icons on left
-- **Education & Highlights:** Card-based layout with hover effects
-- **Project Cards:** Grid layout with hover effects and click-to-expand modals
-- **Publications:** Clean list format with proper citation styling
 
 ## 🚀 Quick Start
 
-### Before You Deploy
-
-1. **Replace placeholder files:**
-   - `assets/img/profile.jpg` → your profile photo (recommended: 500x500px, square)
-   - `cv/Cheng-En_Tsai_CV.pdf` → your actual CV PDF
-
-2. **Update personal information in `index.html`:**
-   - Email address
-   - Google Scholar URL
-   - LinkedIn URL
-   - Bio text
-   - Education details
-   - Research interests
-   - Highlights
-
-3. **Update content:**
-   - Publications in `publications.html`
-   - News items in `news.html`
-   - Projects in `assets/data/projects.json`
-
-### Deploy to GitHub Pages
+### 1. Test Locally
 
 ```bash
-# Navigate to your repo
 cd /Users/cheng_en/Code/xNTsai.github.io
 
-# Check status
-git status
+# Start local server
+python3 -m http.server 8000
 
-# Add all files
-git add .
-
-# Commit changes
-git commit -m "Beautify website with clean professional design"
-
-# Push to GitHub
-git push origin main
+# Open in browser: http://localhost:8000
 ```
 
-Then enable GitHub Pages:
-1. Go to your repo: https://github.com/xNTsai/xNTsai.github.io
-2. **Settings** → **Pages**
-3. **Source:** Deploy from a branch
-4. **Branch:** `main`, folder: `/ (root)`
-5. Click **Save**
+### 2. Replace Placeholders
 
-Your site will be live at **https://xntsai.github.io/** in 1-2 minutes!
+- **Profile photo:** Replace `assets/img/profile.jpg` (recommended: 500x500px square)
+- **CV:** Replace `cv/Cheng-En_Tsai_CV.pdf`
 
-## 🎯 Customization Guide
+### 3. Update Personal Info
+
+Edit the HTML files directly:
+- `index.html` - Update bio, email, links, news
+- `projects.html` - Add/edit your projects
+- `publications.html` - Add your publications
+- `news.html` - Update news items
+
+## 🎨 What You'll See
+
+**Home Page (`index.html`):**
+- Clean intro with text left, circular photo right
+- 5 circular social icons (Email, Scholar, GitHub, LinkedIn, CV)
+- Icons change color on hover
+- News section with emoji bullets
+- Theme toggle (top right)
+
+**Projects Page (`projects.html`):**
+- Clean list of projects with descriptions
+- Tech stack shown on the right
+- Easy to add more projects
+
+**Publications Page (`publications.html`):**
+- Publications with thumbnail images
+- Author names, venue, links
+- Clean formatting
+
+**All Pages:**
+- Simple navigation at top
+- Theme toggle button
+- Consistent styling
+- Mobile-friendly
+
+## ✏️ Customization
 
 ### Change Colors
 
-Edit the CSS variables at the top of `assets/css/styles.css`:
+Edit `assets/css/style.css`:
 
 ```css
-/* Dark theme colors */
 :root {
-  --bg-color: #000000;
-  --text-color: #e0e0e0;
-  --link-color: #58a6ff;
-  /* ... */
+    --bg-color: #000000;      /* Dark theme background */
+    --link-color: #58a6ff;    /* Link color */
+    /* ... more colors */
 }
 
-/* Light theme colors */
 [data-theme="light"] {
-  --bg-color: #ffffff;
-  --text-color: #24292f;
-  /* ... */
+    --bg-color: #ffffff;      /* Light theme background */
+    /* ... */
 }
 ```
 
 ### Add a Project
 
-Edit `assets/data/projects.json`:
+Edit `projects.html`, add a new `.experience-entry`:
 
-```json
-{
-  "title": "Your Project Name",
-  "meta": "Technologies used",
-  "teaser": "Short description shown on card",
-  "description": "Full description shown in modal",
-  "image": "https://link-to-image.jpg",
-  "tags": ["Tag1", "Tag2"],
-  "links": [
-    {"text": "GitHub", "href": "https://github.com/..."}
-  ]
-}
+```html
+<div class="experience-entry">
+  <h3>Project Name <small style="float: right; font-weight: normal;">Tech Stack</small></h3>
+  <p><strong>Type</strong> | Date</p>
+  <ul>
+    <li>Description point 1</li>
+    <li>Description point 2</li>
+  </ul>
+</div>
 ```
 
-### Update Publications
+### Add a Publication
 
-Edit the `<ol class="pub-list">` in `publications.html` - just add new `<li>` items following the existing format.
+Edit `publications.html`, add a new `.publication-entry`:
 
-### Add News Items
-
-Edit the `<ul class="news-list">` in `news.html` - add new `<li>` items with `<time>` tags.
-
-## 🔧 Advanced Customization
-
-### Change Fonts
-
-Add a Google Fonts link in the `<head>` and update the `font-family` in CSS:
-
-```css
-body {
-  font-family: 'Your Font', -apple-system, BlinkMacSystemFont, sans-serif;
-}
+```html
+<div class="publication-entry">
+  <div class="publication-image">
+    <img src="image-url.jpg" alt="Description">
+  </div>
+  <div class="publication-details">
+    <h3>Paper Title</h3>
+    <div class="authors"><strong>Your Name</strong>, et al.</div>
+    <div class="venue">Conference/Journal</div>
+    <div class="links">
+      <a href="#"><i class="fas fa-file-alt"></i> Paper</a>
+    </div>
+    <p>Brief description...</p>
+  </div>
+</div>
 ```
 
-### Modify Layout
+## 📤 Deploy to GitHub Pages
 
-All layouts are in `assets/css/styles.css`. Key sections:
-- `.hero` - Main intro section
-- `.grid` - Project card grid
-- `.item` - Education/experience cards
-- `.two-col` - Two-column sections
+```bash
+# Commit changes
+git add .
+git commit -m "Setup personal website"
+git push origin main
 
-### Add More Pages
+# Then enable GitHub Pages:
+# Settings → Pages → Deploy from branch "main" → Save
+```
 
-1. Duplicate any HTML file (e.g., `news.html`)
-2. Update the content
-3. Add a link to it in the `<nav>` on all pages
+Your site will be at: **https://xntsai.github.io/**
 
-## 📱 Responsive Design
+## 🎯 This Design vs Previous
 
-The site is fully responsive with breakpoints at:
-- **860px:** Hero switches to single column
-- **768px:** Navigation stacks vertically, cards go full-width
+**What Changed:**
+- ✅ Copied exact structure from your senior's site
+- ✅ Much simpler - no complex framework
+- ✅ Easy to understand and modify
+- ✅ Clean, professional academic look
+- ✅ All content in simple HTML (no JSON files)
 
-## 🌐 Browser Support
+**Key Features from Senior's Site:**
+- Text left, photo right intro layout
+- Circular social icons with hover effects
+- Simple navigation
+- Clean typography
+- News section with emojis
+- Theme toggle
 
-- ✅ Chrome/Edge (latest)
-- ✅ Firefox (latest)
-- ✅ Safari (latest)
-- ✅ Mobile browsers
+## 📝 To-Do Before Deploy
 
-## 📝 License
+- [ ] Replace `assets/img/profile.jpg` with your photo
+- [ ] Replace `cv/Cheng-En_Tsai_CV.pdf` with your CV
+- [ ] Update email, Google Scholar, LinkedIn URLs
+- [ ] Review and update news items
+- [ ] Review and update projects
+- [ ] Review and update publications
+- [ ] Test theme toggle
+- [ ] Test on mobile (resize browser)
 
-Feel free to use this template for your own personal website! No attribution required.
+## 🆘 Need Help?
 
-## 🙏 Acknowledgments
-
-Design inspired by:
-- [Tsung-Min (Vincent) Pai](https://bai1026.github.io/) - Clean, academic style
-- Various academic personal websites
-- GitHub's design system for color palette
+- **Theme not working?** Check browser console (F12) for errors
+- **Links broken?** Make sure file paths are correct
+- **Want to change something?** All code is simple HTML/CSS - just edit directly!
 
 ---
 
-**Built with vanilla HTML/CSS/JS** • **No framework required** • **Easy to customize**
-
-For questions or issues, feel free to reach out!
+**Design Credit:** Inspired by [Tsung-Min (Vincent) Pai](https://bai1026.github.io/)  
+**Built with:** Vanilla HTML, CSS, JavaScript

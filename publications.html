@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Publications — Cheng‑En (Johnny) Tsai</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications - Cheng-En (Johnny) Tsai</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🧠</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <script src="assets/js/theme-toggle.js"></script>
 </head>
@@ -14,50 +15,65 @@
       <nav>
         <a href="index.html">About Me</a>
         <a href="projects.html">Projects</a>
-        <a href="publications.html" class="active">Publications</a>
+        <a href="publications.html">Publications</a>
         <a href="news.html">News</a>
       </nav>
-      <button class="theme-toggle" aria-label="Toggle dark mode">
+      <button class="theme-toggle">
         <i class="fas fa-sun"></i> Light
       </button>
     </header>
 
     <main>
-      <h1>Publications & Conference Experience</h1>
-      <ol class="pub-list">
-        <li>
-          <span class="pub-title">LossAgg‑QFL: Communication‑Efficient Quantum Federated Learning via Loss Aggregation</span><br>
-          <span class="pub-authors"><strong>Cheng-En Tsai</strong>, et al.</span><br>
-          <span class="pub-venue">Under review, 2026</span>
-          <div class="pub-links">
-            <a href="#" aria-disabled="true"><i class="fas fa-file-pdf"></i> PDF (soon)</a>
-            <a href="#" aria-disabled="true"><i class="fab fa-github"></i> Code</a>
-            <a href="#" aria-disabled="true"><i class="fas fa-quote-right"></i> BibTeX</a>
+      <h2>Publications & Conference Experience</h2>
+
+      <div class="publication-entry">
+        <div class="publication-image">
+          <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&q=80&auto=format&fit=crop" alt="Quantum Federated Learning">
+        </div>
+        <div class="publication-details">
+          <h3>LossAgg-QFL: Communication-Efficient Quantum Federated Learning via Loss Aggregation</h3>
+          <div class="authors">
+            <strong>Cheng-En Tsai</strong>, et al.
+          </div>
+          <div class="venue">
+            Under Review (First Author)
+          </div>
+          <div class="links">
+            <a href="#"><i class="fas fa-file-alt"></i> Paper (soon)</a>
           </div>
           <p>
-            Proposed a loss-aggregation strategy to estimate global gradients via SPSA, reducing communication and measurements by orders of magnitude.
+            A novel method that aggregates loss values instead of gradients in quantum federated learning, reducing communication overhead and quantum measurements by orders of magnitude while maintaining strong convergence under non-IID data distribution.
           </p>
-        </li>
-        <li>
-          <span class="pub-title">QSyn: A Developer‑Friendly Framework for Quantum Circuit Synthesis</span><br>
-          <span class="pub-authors">Mu-Te Lau, Chin-Yi Cheng, <strong>Cheng-En Tsai</strong>, et al.</span><br>
-          <span class="pub-venue"><a href="https://qce.quantum.ieee.org/2024/" target="_blank">IEEE Quantum Week (QCE) 2024</a> (Demo Track)</span>
-          <div class="pub-links">
-            <a href="#" aria-disabled="true"><i class="fas fa-file-pdf"></i> PDF</a>
+        </div>
+      </div>
+
+      <div class="publication-entry">
+        <div class="publication-image">
+          <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=400&q=80&auto=format&fit=crop" alt="QSyn Framework">
+        </div>
+        <div class="publication-details">
+          <h3>QSyn: A Developer-Friendly Quantum Circuit Synthesis Framework for NISQ Era and Beyond</h3>
+          <div class="authors">
+            Mu-Te Lau, Chin-Yi Cheng, <strong>Cheng-En Tsai</strong>, et al.
+          </div>
+          <div class="venue">
+            <a href="https://qce.quantum.ieee.org/2024/" target="_blank">IEEE Quantum Week (QCE) 2024</a> (Demo Track)
+          </div>
+          <div class="links">
+            <a href="#"><i class="fas fa-file-alt"></i> Paper</a>
             <a href="https://github.com/DVLab-NTU/qsyn" target="_blank"><i class="fab fa-github"></i> Code</a>
           </div>
           <p>
-            Developed a C++-based quantum circuit compilation framework that provides a unified and user-friendly environment for prototyping and evaluating QCS algorithms.
+            Developed a C++-based quantum circuit compilation framework that provides a unified environment for prototyping and evaluating quantum circuit synthesis algorithms, with robust developer tools including CI/CD and regression testing.
           </p>
-        </li>
-      </ol>
+        </div>
+      </div>
+
     </main>
 
     <footer>
-      <p>&copy; <span id="year"></span> Cheng‑En (Johnny) Tsai</p>
+      <p>&copy; 2025 Cheng-En (Johnny) Tsai</p>
     </footer>
   </div>
-  
-  <script src="assets/js/main.js"></script>
 </body>
 </html>

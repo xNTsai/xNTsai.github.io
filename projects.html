@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects — Cheng‑En (Johnny) Tsai</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Cheng-En (Johnny) Tsai</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🧠</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <script src="assets/js/theme-toggle.js"></script>
 </head>
@@ -13,36 +14,75 @@
     <header>
       <nav>
         <a href="index.html">About Me</a>
-        <a href="projects.html" class="active">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="news.html">News</a>
       </nav>
-      <button class="theme-toggle" aria-label="Toggle dark mode">
+      <button class="theme-toggle">
         <i class="fas fa-sun"></i> Light
       </button>
     </header>
 
     <main>
-      <h1>Projects</h1>
-      <p class="muted">Click a card to view more details about each project.</p>
-      <div id="projectGrid" class="grid"></div>
+      <h2>Projects</h2>
+
+      <div class="experience-entry">
+        <h3>Google Schematic DRC Automation <small style="float: right; font-weight: normal;">Python · PyQt · Allegro</small></h3>
+        <p><strong>Hardware Engineering Intern</strong> | Jul 2024 - Sep 2025</p>
+        <ul>
+          <li>Developed Python-based automation tool for schematic Design Rule Checking (DRC) of high-speed hardware designs.</li>
+          <li>Implemented ERC, IMP, and derating checks with PyQt GUI for cross-team collaboration.</li>
+          <li>Parsed Allegro netlists and board data to validate design correctness, improving verification efficiency by 70%.</li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <h3>QSyn - Quantum Circuit Synthesis Framework <small style="float: right; font-weight: normal;">C++ · Quantum Computing</small></h3>
+        <p><strong>Research Project</strong> | Feb 2024 - Present</p>
+        <ul>
+          <li>Core developer of open-source quantum circuit synthesis framework for NISQ-era quantum computing.</li>
+          <li>Implemented T-count optimization passes including TMerge, H-gadget, and phase polynomial techniques.</li>
+          <li>Developed experimental ZX-calculus to lattice-surgery mapping for fault-tolerant quantum computing.</li>
+          <li>Presented demo at IEEE Quantum Week 2024.</li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <h3>LossAgg-QFL: Communication-Efficient Quantum Federated Learning <small style="float: right; font-weight: normal;">Python · Quantum ML</small></h3>
+        <p><strong>Research Project</strong> | Sep 2023 - Present</p>
+        <ul>
+          <li>Proposed novel loss-aggregation strategy for quantum federated learning using SPSA gradient estimation.</li>
+          <li>Reduced communication overhead and quantum measurements by orders of magnitude compared to existing methods.</li>
+          <li>Demonstrated strong convergence under non-IID data distribution across multiple clients.</li>
+          <li>Paper under review for publication.</li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <h3>IC/CAD Contest - RL-based Logic Optimization <small style="float: right; font-weight: normal;">Python · Reinforcement Learning</small></h3>
+        <p><strong>Course Project</strong> | Jun 2025</p>
+        <ul>
+          <li>Implemented reinforcement learning approach to minimize circuit costs in logic synthesis.</li>
+          <li>Compared RL performance against baseline methods (greedy, simulated annealing).</li>
+          <li>Utilized black-box cost estimator and converted netlists to AIG format for optimization.</li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <h3>NTUEE Light Dance <small style="float: right; font-weight: normal;">C/C++ · Embedded Systems</small></h3>
+        <p><strong>Extracurricular Project</strong> | Oct 2023 - Mar 2024</p>
+        <ul>
+          <li>Developed C/C++ library for communication between ATTiny85 microcontrollers and Raspberry Pi.</li>
+          <li>Constructed complete data path for LED control in synchronized light dance performance.</li>
+          <li>Designed choreography and programmed lighting effects for 100+ LED modules.</li>
+        </ul>
+      </div>
+
     </main>
 
-    <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
-      <div class="modal-content" role="document">
-        <button class="modal-close" aria-label="Close">×</button>
-        <div class="modal-body">
-          <!-- Filled by JS -->
-        </div>
-      </div>
-    </div>
-
     <footer>
-      <p>&copy; <span id="year"></span> Cheng‑En (Johnny) Tsai</p>
+      <p>&copy; 2025 Cheng-En (Johnny) Tsai</p>
     </footer>
   </div>
-
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/projects.js"></script>
 </body>
 </html>
