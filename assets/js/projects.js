@@ -8,9 +8,11 @@ async function loadProjects(){
     grid.innerHTML = projects.map((p, idx) => `
       <article class="card" data-idx="${idx}" tabindex="0" role="button" aria-label="Open ${p.title}">
         <img class="cover" src="${p.image}" alt="${p.title} cover"/>
-        <h3>${p.title}</h3>
-        <div class="meta">${p.meta || ''}</div>
-        <div class="hover-reveal">${p.teaser || ''}</div>
+        <div class="card-content">
+          <h3>${p.title}</h3>
+          <div class="meta">${p.meta || ''}</div>
+          <div class="teaser">${p.teaser || ''}</div>
+        </div>
       </article>
     `).join('');
 

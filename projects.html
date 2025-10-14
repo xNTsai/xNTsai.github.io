@@ -5,47 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects — Cheng‑En (Johnny) Tsai</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="assets/js/theme-toggle.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="/">CT</a>
-      <nav class="menu" aria-label="Primary">
-        <a href="index.html">Home</a>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="index.html">About Me</a>
         <a href="projects.html" class="active">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="news.html">News</a>
-        <a href="https://github.com/xNTsai" target="_blank" rel="noopener">GitHub</a>
       </nav>
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
-    </div>
-  </header>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-sun"></i> Light
+      </button>
+    </header>
 
-  <main class="container">
-    <section class="section">
+    <main>
       <h1>Projects</h1>
-      <p class="muted">Hover a card for details; click to open a modal with more info.</p>
+      <p class="muted">Click a card to view more details about each project.</p>
       <div id="projectGrid" class="grid"></div>
-    </section>
-  </main>
+    </main>
 
-  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="modal-content" role="document">
-      <button class="modal-close" aria-label="Close">×</button>
-      <div class="modal-body">
-        <!-- Filled by JS -->
+    <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-content" role="document">
+        <button class="modal-close" aria-label="Close">×</button>
+        <div class="modal-body">
+          <!-- Filled by JS -->
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Cheng‑En (Johnny) Tsai</p>
-    </div>
-  </footer>
+    <footer>
+      <p>&copy; <span id="year"></span> Cheng‑En (Johnny) Tsai</p>
+    </footer>
+  </div>
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/projects.js"></script>
 </body>
 </html>
-

@@ -7,61 +7,68 @@
   <meta name="description" content="Personal website of Cheng‑En (Johnny) Tsai – Quantum Computing, QML, EDA." />
   <link rel="preload" href="assets/img/profile.jpg" as="image">
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🧠</text></svg>">
+  <script src="assets/js/theme-toggle.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="/">CT</a>
-      <nav class="menu" aria-label="Primary">
-        <a href="index.html" class="active">Home</a>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="index.html" class="active">About Me</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="news.html">News</a>
-        <a href="https://github.com/xNTsai" target="_blank" rel="noopener">GitHub</a>
       </nav>
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
-    </div>
-  </header>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-sun"></i> Light
+      </button>
+    </header>
 
-  <main class="container">
-    <!-- Hero split: left profile + links, right about + CV button -->
-    <section class="hero">
-      <div class="hero-left">
-        <img class="avatar" src="assets/img/profile.jpg" alt="Portrait of Cheng‑En (Johnny) Tsai" />
-        <h1>Cheng‑En (Johnny) Tsai</h1>
-        <p class="subtitle">Quantum Circuit Synthesis · QML · EDA/Hardware Automation</p>
-        <ul class="links">
-          <li><a href="mailto:xntsai@ntu.edu.tw">Email</a></li>
-          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
-          <li><a href="https://www.linkedin.com/in/xntsai/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://github.com/xNTsai" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
-      </div>
-
-      <div class="hero-right">
-        <h2>About me</h2>
-        <p>
-          I'm a senior at NTU EE working on quantum circuit synthesis, quantum
-          federated learning, and EDA/PCB automation. I build tools and theory to
-          reduce overhead for fault‑tolerant quantum computing and enable scalable,
-          distributed architectures.
-        </p>
-        <div class="cta-row">
-          <a class="btn primary" href="cv/Cheng-En_Tsai_CV.pdf" download>Download CV</a>
-          <a class="btn ghost" href="projects.html">Explore projects</a>
+    <main>
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="hero-left">
+          <h1>Hi! I'm Cheng‑En (Johnny) Tsai</h1>
+          <p class="subtitle">
+            I am a senior undergraduate student at the Department of <a href="https://web.ee.ntu.edu.tw/" target="_blank">Electrical Engineering</a>, 
+            <a href="https://www.ntu.edu.tw/" target="_blank">National Taiwan University (NTU)</a>, focusing on Quantum Circuit Synthesis, 
+            Quantum Machine Learning, and Electronic Design Automation. Passionate about building efficient quantum systems and contributing to cutting-edge research.
+          </p>
+          
+          <div class="social-icons">
+            <a href="mailto:xntsai@ntu.edu.tw" title="Email" class="social-icon email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://scholar.google.com/" title="Google Scholar" class="social-icon scholar" target="_blank" rel="noopener">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="https://github.com/xNTsai" title="GitHub" class="social-icon github" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/xntsai/" title="LinkedIn" class="social-icon linkedin" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="cv/Cheng-En_Tsai_CV.pdf" title="CV" class="social-icon cv" download>
+              <i class="fas fa-file-alt"></i>
+            </a>
+          </div>
+          
+          <p class="contact-note">Email and LinkedIn are the best ways to reach me.</p>
+        </div>
+        
+        <div class="hero-right">
+          <img src="assets/img/profile.jpg" alt="Portrait of Cheng‑En (Johnny) Tsai" class="profile-pic" />
         </div>
       </div>
-    </section>
 
-    <!-- Education -->
-    <section class="section">
+      <!-- Education -->
       <h2>Education</h2>
       <div class="timeline">
-        <article class="item">
+        <div class="item">
           <div class="item-left">
-            <div class="item-title">National Taiwan University (NTU), B.S. Electrical Engineering</div>
-            <div class="item-meta">Taipei, Taiwan · 2021 — 2025 (expected)</div>
+            <div class="item-title">National Taiwan University (NTU)</div>
+            <div class="item-meta">B.S. in Electrical Engineering · Taipei, Taiwan · 2021 — 2025 (expected)</div>
           </div>
           <div class="item-right">
             <ul class="tags">
@@ -70,36 +77,31 @@
               <li>EDA</li>
             </ul>
           </div>
-        </article>
+        </div>
       </div>
-    </section>
 
-    <!-- Highlights / Quick links -->
-    <section class="section two-col">
-      <div>
-        <h3>Selected highlights</h3>
-        <ul class="bullets">
-          <li>Google Hardware Eng. intern: schematic DRC automation (Python).</li>
-          <li>QSyn contributor: quantum circuit synthesis framework.</li>
-          <li>LossAgg‑QFL: communication‑efficient QFL via loss aggregation.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Quick links</h3>
-        <ul class="bullets">
-          <li><a href="publications.html">Publications & preprints</a></li>
-          <li><a href="projects.html">Project gallery</a></li>
-          <li><a href="news.html">News & updates</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
+      <!-- Research Interests -->
+      <h2>Research Interests</h2>
+      <ul class="bullets">
+        <li><strong>Quantum Circuit Synthesis:</strong> Developing efficient algorithms for T-count optimization and circuit compilation</li>
+        <li><strong>Quantum Machine Learning:</strong> Exploring distributed quantum federated learning and QAOA applications</li>
+        <li><strong>Electronic Design Automation:</strong> Building automation tools for hardware design verification and optimization</li>
+      </ul>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Cheng‑En (Johnny) Tsai · Built with vanilla HTML/CSS/JS · <a href="https://github.com/xNTsai" target="_blank" rel="noopener">GitHub</a></p>
-    </div>
-  </footer>
+      <!-- Highlights -->
+      <h2>Selected Highlights</h2>
+      <ul class="bullets">
+        <li>🏢 <strong>Google Hardware Engineering Intern:</strong> Developed Python-based schematic DRC automation tools</li>
+        <li>🔬 <strong>QSyn Contributor:</strong> Core developer of quantum circuit synthesis framework</li>
+        <li>📚 <strong>LossAgg-QFL:</strong> Proposed communication-efficient quantum federated learning via loss aggregation</li>
+        <li>🏆 <strong>IC/CAD Contest:</strong> Implemented RL-based logic optimization achieving top performance</li>
+      </ul>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Cheng‑En (Johnny) Tsai</p>
+    </footer>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>

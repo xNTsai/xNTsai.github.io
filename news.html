@@ -5,39 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>News — Cheng‑En (Johnny) Tsai</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="assets/js/theme-toggle.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="/">CT</a>
-      <nav class="menu" aria-label="Primary">
-        <a href="index.html">Home</a>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="index.html">About Me</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="news.html" class="active">News</a>
-        <a href="https://github.com/xNTsai" target="_blank" rel="noopener">GitHub</a>
       </nav>
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
-    </div>
-  </header>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-sun"></i> Light
+      </button>
+    </header>
 
-  <main class="container">
-    <section class="section">
-      <h1>News</h1>
+    <main>
+      <h1>News & Updates</h1>
       <ul class="news-list">
-        <li><time datetime="2025-09-01">Sep 1, 2025</time> — Started Google Hardware Eng. internship wrap‑up.</li>
-        <li><time datetime="2025-08-10">Aug 10, 2025</time> — Finished IC/CAD contest Problem A with RL optimizer.</li>
-        <li><time datetime="2025-06-22">Jun 22, 2025</time> — Exploring QAOA and distributed quantum systems.</li>
+        <li><time datetime="2025-10-01"><strong>[Oct 2025]</strong></time> Started final year project on quantum circuit optimization techniques.</li>
+        <li><time datetime="2025-09-01"><strong>[Sep 2025]</strong></time> Google Hardware Eng. internship wrap-up and presentation.</li>
+        <li><time datetime="2025-08-10"><strong>[Aug 2025]</strong></time> Finished IC/CAD contest Problem A with RL-based logic optimizer.</li>
+        <li><time datetime="2025-06-22"><strong>[Jun 2025]</strong></time> Exploring QAOA applications and distributed quantum systems for research.</li>
+        <li><time datetime="2024-10-01"><strong>[Oct 2024]</strong></time> Presented QSyn demo at IEEE Quantum Week 2024.</li>
+        <li><time datetime="2024-07-01"><strong>[Jul 2024]</strong></time> Started summer internship at Google as Hardware Engineering Intern.</li>
+        <li><time datetime="2024-02-01"><strong>[Feb 2024]</strong></time> Joined Prof. Chung Yang (Ric) Huang's research group working on quantum circuit synthesis.</li>
+        <li><time datetime="2023-09-01"><strong>[Sep 2023]</strong></time> Started undergraduate research on quantum federated learning with Prof. Hao Chung Cheng.</li>
       </ul>
-    </section>
-  </main>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Cheng‑En (Johnny) Tsai</p>
-    </div>
-  </footer>
+    <footer>
+      <p>&copy; <span id="year"></span> Cheng‑En (Johnny) Tsai</p>
+    </footer>
+  </div>
+  
   <script src="assets/js/main.js"></script>
 </body>
 </html>
-

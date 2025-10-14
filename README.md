@@ -1,96 +1,208 @@
 # Cheng-En (Johnny) Tsai — Personal Website
 
-A clean, framework-free personal website built with vanilla HTML, CSS, and JavaScript.
+A clean, professional personal website built with vanilla HTML, CSS, and JavaScript. Inspired by modern academic website designs with a focus on simplicity and elegance.
 
-## Features
+## ✨ Features
 
-- **Responsive design** with dark/light mode toggle
-- **Split hero layout** (profile + links on left, about + CV on right)
-- **Project gallery** with hover effects and modal details
-- **Data-driven projects** via JSON (easy to update without touching HTML)
-- Publications and News pages
-- Modern, accessible design
+- **Clean & Professional Design** - Inspired by top academic personal websites
+- **Dark/Light Mode Toggle** - Automatic theme switching with localStorage persistence
+- **Responsive Layout** - Works beautifully on all devices
+- **Font Awesome Icons** - Professional icon set for social links
+- **Interactive Project Gallery** - Click-to-expand modal for project details
+- **Simple & Maintainable** - No frameworks, just vanilla HTML/CSS/JS
 
-## Folder Structure
+## 📁 Folder Structure
 
 ```
 xNTsai.github.io/
-├─ index.html              # Home page
-├─ projects.html           # Projects gallery
+├─ index.html              # Home page with bio, education, highlights
+├─ projects.html           # Project gallery with modal details
 ├─ publications.html       # Publications list
 ├─ news.html              # News & updates
 ├─ assets/
 │  ├─ css/
-│  │  └─ styles.css       # All styles
+│  │  └─ styles.css       # All styles (dark/light theme)
 │  ├─ js/
-│  │  ├─ main.js          # Theme toggle & utilities
-│  │  └─ projects.js      # Project grid & modal logic
+│  │  ├─ main.js          # Utility functions
+│  │  ├─ theme-toggle.js  # Theme switching logic
+│  │  └─ projects.js      # Project grid & modal
 │  ├─ data/
-│  │  └─ projects.json    # Project data
+│  │  └─ projects.json    # Project data (easy to edit!)
 │  └─ img/
 │     └─ profile.jpg      # ⚠️ REPLACE with your photo
 └─ cv/
    └─ Cheng-En_Tsai_CV.pdf # ⚠️ REPLACE with your CV
 ```
 
-## Quick Customization
+## 🎨 Design Features
 
-1. **Profile photo**: Replace `assets/img/profile.jpg` with your own
-2. **CV file**: Replace `cv/Cheng-En_Tsai_CV.pdf` with your CV
-3. **Projects**: Edit `assets/data/projects.json` to add/remove projects
-4. **Content**: Edit the HTML files directly to update text
+### Color Scheme
+- **Dark Theme (Default):** Deep black background (#000000) with subtle grays
+- **Light Theme:** Clean white background with professional typography
+- Both themes use carefully selected accent colors for links and interactive elements
 
-## Deploy to GitHub Pages
+### Typography
+- System font stack for optimal performance and native feel
+- Clear hierarchy with thoughtful spacing
+- Responsive font sizes that scale well on all devices
 
-### Option 1: User site (https://xntsai.github.io/)
+### Layout
+- **Hero Section:** Photo on right, bio and social icons on left
+- **Education & Highlights:** Card-based layout with hover effects
+- **Project Cards:** Grid layout with hover effects and click-to-expand modals
+- **Publications:** Clean list format with proper citation styling
 
-This repo is already named `xNTsai.github.io`, so it will deploy to the root:
+## 🚀 Quick Start
 
-1. Commit and push:
-   ```bash
-   git add .
-   git commit -m "Initial website"
-   git push origin main
-   ```
+### Before You Deploy
 
-2. Enable GitHub Pages:
-   - Go to repo **Settings → Pages**
-   - **Source**: Deploy from a branch
-   - **Branch**: `main` / folder: `/ (root)`
-   - Click **Save**
+1. **Replace placeholder files:**
+   - `assets/img/profile.jpg` → your profile photo (recommended: 500x500px, square)
+   - `cv/Cheng-En_Tsai_CV.pdf` → your actual CV PDF
 
-3. Your site will be live at **https://xntsai.github.io/** in ~1 minute
+2. **Update personal information in `index.html`:**
+   - Email address
+   - Google Scholar URL
+   - LinkedIn URL
+   - Bio text
+   - Education details
+   - Research interests
+   - Highlights
 
-### Option 2: Project site (https://xntsai.github.io/Personal-Website/)
+3. **Update content:**
+   - Publications in `publications.html`
+   - News items in `news.html`
+   - Projects in `assets/data/projects.json`
 
-If you want to keep this in a separate repo:
+### Deploy to GitHub Pages
 
-1. Create a new repo `Personal-Website`
-2. Copy these files there
-3. Follow the same GitHub Pages setup
-4. Site will be at **https://xntsai.github.io/Personal-Website/**
+```bash
+# Navigate to your repo
+cd /Users/cheng_en/Code/xNTsai.github.io
 
-## Customization Tips
+# Check status
+git status
 
-- **Colors**: Edit CSS variables at the top of `assets/css/styles.css`
-- **Theme toggle**: Automatically saves preference to localStorage
-- **Add pages**: Duplicate any HTML file and update the nav menu
-- **Dynamic publications**: You can create `publications.json` similar to `projects.json` for easier updates
+# Add all files
+git add .
 
-## TODO Before Going Live
+# Commit changes
+git commit -m "Beautify website with clean professional design"
 
-- [ ] Replace `assets/img/profile.jpg` with your photo
-- [ ] Replace `cv/Cheng-En_Tsai_CV.pdf` with your CV
-- [ ] Update links in `index.html` (Google Scholar, LinkedIn, etc.)
-- [ ] Update project data in `assets/data/projects.json`
-- [ ] Update publications in `publications.html`
-- [ ] Update news items in `news.html`
+# Push to GitHub
+git push origin main
+```
 
-## License
+Then enable GitHub Pages:
+1. Go to your repo: https://github.com/xNTsai/xNTsai.github.io
+2. **Settings** → **Pages**
+3. **Source:** Deploy from a branch
+4. **Branch:** `main`, folder: `/ (root)`
+5. Click **Save**
 
-Feel free to use this template for your own site!
+Your site will be live at **https://xntsai.github.io/** in 1-2 minutes!
+
+## 🎯 Customization Guide
+
+### Change Colors
+
+Edit the CSS variables at the top of `assets/css/styles.css`:
+
+```css
+/* Dark theme colors */
+:root {
+  --bg-color: #000000;
+  --text-color: #e0e0e0;
+  --link-color: #58a6ff;
+  /* ... */
+}
+
+/* Light theme colors */
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #24292f;
+  /* ... */
+}
+```
+
+### Add a Project
+
+Edit `assets/data/projects.json`:
+
+```json
+{
+  "title": "Your Project Name",
+  "meta": "Technologies used",
+  "teaser": "Short description shown on card",
+  "description": "Full description shown in modal",
+  "image": "https://link-to-image.jpg",
+  "tags": ["Tag1", "Tag2"],
+  "links": [
+    {"text": "GitHub", "href": "https://github.com/..."}
+  ]
+}
+```
+
+### Update Publications
+
+Edit the `<ol class="pub-list">` in `publications.html` - just add new `<li>` items following the existing format.
+
+### Add News Items
+
+Edit the `<ul class="news-list">` in `news.html` - add new `<li>` items with `<time>` tags.
+
+## 🔧 Advanced Customization
+
+### Change Fonts
+
+Add a Google Fonts link in the `<head>` and update the `font-family` in CSS:
+
+```css
+body {
+  font-family: 'Your Font', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+```
+
+### Modify Layout
+
+All layouts are in `assets/css/styles.css`. Key sections:
+- `.hero` - Main intro section
+- `.grid` - Project card grid
+- `.item` - Education/experience cards
+- `.two-col` - Two-column sections
+
+### Add More Pages
+
+1. Duplicate any HTML file (e.g., `news.html`)
+2. Update the content
+3. Add a link to it in the `<nav>` on all pages
+
+## 📱 Responsive Design
+
+The site is fully responsive with breakpoints at:
+- **860px:** Hero switches to single column
+- **768px:** Navigation stacks vertically, cards go full-width
+
+## 🌐 Browser Support
+
+- ✅ Chrome/Edge (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Mobile browsers
+
+## 📝 License
+
+Feel free to use this template for your own personal website! No attribution required.
+
+## 🙏 Acknowledgments
+
+Design inspired by:
+- [Tsung-Min (Vincent) Pai](https://bai1026.github.io/) - Clean, academic style
+- Various academic personal websites
+- GitHub's design system for color palette
 
 ---
 
-Built with vanilla HTML/CSS/JS · No framework required · Easy to customize
+**Built with vanilla HTML/CSS/JS** • **No framework required** • **Easy to customize**
 
+For questions or issues, feel free to reach out!
