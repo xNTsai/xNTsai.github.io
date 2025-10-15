@@ -167,11 +167,12 @@ a:hover {
 }
 
 .hero-section a {
-    color: #58a6ff;
+    color: #ffffff;
 }
 
 .hero-section a:hover {
     color: #79c0ff;
+    text-decoration: underline;
 }
 
 /* Interests/Education section text colors in hero */
