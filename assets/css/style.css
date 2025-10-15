@@ -150,6 +150,71 @@ a:hover {
     filter: brightness(1);
 }
 
+/* Always use dark mode text colors in hero section */
+.hero-section {
+    color: #e0e0e0;
+}
+
+.hero-section h1,
+.hero-section h2,
+.hero-section h3 {
+    color: #f0f6fc;
+}
+
+.hero-section .subtitle,
+.hero-section .institution {
+    color: #c9d1d9;
+}
+
+.hero-section a {
+    color: #58a6ff;
+}
+
+.hero-section a:hover {
+    color: #79c0ff;
+}
+
+/* Interests/Education section text colors in hero */
+.hero-section .two-column-section ul li::before {
+    color: #58a6ff;
+}
+
+.hero-section strong {
+    color: #f0f6fc;
+}
+
+/* Profile title and social icons in hero use dark mode colors */
+.hero-section .portrait-title h3 {
+    color: #c9d1d9;
+    border-bottom: none;
+}
+
+.hero-section .profile-pic {
+    border-color: #30363d;
+}
+
+.hero-section .social-icon {
+    background-color: #8b949e;
+    color: #000000;
+}
+
+/* Borders in hero section use dark mode */
+.hero-section h3 {
+    border-color: #30363d;
+}
+
+/* Button in hero section always uses light mode style */
+.hero-section .btn-download {
+    color: #24292f;
+    background-color: #ffffff;
+    border: 2px solid #d1d9e0;
+}
+
+.hero-section .btn-download:hover {
+    background-color: #f6f8fa;
+    border-color: #d1d9e0;
+}
+
 /* Main Content */
 main {
     padding-top: 30px;
