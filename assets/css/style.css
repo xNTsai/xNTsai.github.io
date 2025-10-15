@@ -210,7 +210,7 @@ a:hover {
 .hero-section .social-icon {
     background-color: transparent !important;
     background: none !important;
-    color: #e0e0e0;
+    color: #ffffff;
     border: none !important;
     border-radius: 0 !important;
     width: auto !important;
@@ -221,7 +221,7 @@ a:hover {
 }
 
 .hero-section .social-icon:hover {
-    color: #58a6ff !important;
+    color: #ffffff !important;
     transform: scale(1.15) !important;
     box-shadow: none !important;
     background-color: transparent !important;
