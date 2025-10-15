@@ -141,7 +141,7 @@ a:hover {
 .hero-section {
     position: relative;
     background-color: var(--bg-color);
-    background-image: url('../stacked-peaks.svg');
+    background-image: url('../../stacked-peaks.svg');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
