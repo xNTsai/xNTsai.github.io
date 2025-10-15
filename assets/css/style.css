@@ -183,59 +183,55 @@ a:hover {
     color: #f0f6fc;
 }
 
-/* Profile title in hero uses dark mode colors */
+/* Profile title in hero uses white colors */
 .hero-section .portrait-title h3 {
-    color: #c9d1d9;
+    color: #ffffff;
     border-bottom: none;
 }
 
 .hero-section .portrait-title .institution a {
-    color: #58a6ff;
+    color: #ffffff;
 }
 
 .hero-section .portrait-title .institution a:hover {
     color: #79c0ff;
+    text-decoration: underline;
 }
 
 .hero-section .profile-pic {
     border-color: #30363d;
 }
 
-/* Social icons in hero use LIGHT mode style */
+/* Social icons in hero use HugoBox style - simple icons */
 .hero-section .social-icon {
-    background-color: #ffffff;
-    color: #24292f;
-    border: 2px solid #d1d9e0;
+    background-color: transparent;
+    color: #e0e0e0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
 }
 
 .hero-section .social-icon:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #58a6ff;
+    transform: scale(1.2);
+    box-shadow: none;
 }
 
-/* Individual hover colors for social icons in hero */
 .hero-section .social-icon.email:hover {
-    background-color: #ea4335;
-    color: #ffffff;
-    border-color: #ea4335;
+    color: #58a6ff;
 }
 
 .hero-section .social-icon.scholar:hover {
-    background-color: #4285f4;
-    color: #ffffff;
-    border-color: #4285f4;
+    color: #58a6ff;
 }
 
 .hero-section .social-icon.github:hover {
-    background-color: #333;
-    color: #ffffff;
-    border-color: #333;
+    color: #58a6ff;
 }
 
 .hero-section .social-icon.linkedin:hover {
-    background-color: #0077b5;
-    color: #ffffff;
-    border-color: #0077b5;
+    color: #58a6ff;
 }
 
 /* Borders in hero section use LIGHT mode colors */
