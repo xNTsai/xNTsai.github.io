@@ -202,38 +202,30 @@ a:hover {
     border-color: #30363d;
 }
 
-/* Social icons in hero use HugoBox style - simple icons */
+/* Social icons in hero use HugoBox style - pure icons, no background */
+.hero-section .social-icons {
+    gap: 18px;
+}
+
 .hero-section .social-icon {
     background-color: transparent;
+    background: none;
     color: #e0e0e0;
     border: none;
     border-radius: 0;
     width: auto;
     height: auto;
-    font-size: 24px;
-    padding: 5px;
+    font-size: 26px;
+    padding: 0;
+    box-shadow: none;
 }
 
 .hero-section .social-icon:hover {
     color: #58a6ff;
-    transform: scale(1.2);
+    transform: scale(1.15);
     box-shadow: none;
-}
-
-.hero-section .social-icon.email:hover {
-    color: #58a6ff;
-}
-
-.hero-section .social-icon.scholar:hover {
-    color: #58a6ff;
-}
-
-.hero-section .social-icon.github:hover {
-    color: #58a6ff;
-}
-
-.hero-section .social-icon.linkedin:hover {
-    color: #58a6ff;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 /* Borders in hero section use LIGHT mode colors */
@@ -336,10 +328,10 @@ h3 {
     color: var(--link-color);
 }
 
-/* Social Icons */
+/* Social Icons - Default style (for other pages) */
 .social-icons {
     display: flex;
-    gap: 12px;
+    gap: 15px;
     margin: 20px 0;
     align-items: center;
     justify-content: center;
