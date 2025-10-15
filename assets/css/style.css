@@ -110,6 +110,59 @@ a:hover {
     text-decoration: none;
 }
 
+/* Mobile Menu Toggle (hidden on desktop) */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+    background-color: var(--border-color);
+}
+
+.mobile-menu-toggle.open i::before {
+    content: "\f00d"; /* Font Awesome X icon */
+}
+
+/* Mobile Navigation (hidden by default) */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--header-bg);
+    border-top: 1px solid var(--border-color);
+    padding: 15px 30px;
+}
+
+.mobile-nav.open {
+    display: flex;
+}
+
+.mobile-nav a {
+    padding: 12px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color);
+    transition: color 0.2s ease;
+    text-align: center;
+}
+
+.mobile-nav a:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav a:hover {
+    color: var(--link-color);
+}
+
 /* Theme Toggle on right */
 .theme-toggle {
     background: none;
@@ -556,23 +609,34 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column;
+        flex-direction: row;
         padding: 15px 20px;
         gap: 15px;
     }
     
+    /* Hide desktop menu on mobile */
     .nav-menu {
-        order: 2;
-        width: 100%;
+        display: none;
+    }
+    
+    /* Show mobile menu toggle on mobile */
+    .mobile-menu-toggle {
+        display: flex;
+        align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
+        order: 2;
     }
     
     .brand {
         order: 1;
+        flex: 1;
     }
     
     .theme-toggle {
+        order: 2;
+    }
+    
+    .mobile-menu-toggle {
         order: 3;
     }
     
