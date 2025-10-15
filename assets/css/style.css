@@ -8,7 +8,7 @@
     --heading-color: #f0f6fc;
     --subheading-color: #c9d1d9;
     --muted-color: #8b949e;
-    --header-bg: #131313;
+    --header-bg: #000000;
 }
 
 /* Light Theme Variables */
@@ -21,7 +21,7 @@
     --heading-color: #1f2328;
     --subheading-color: #656d76;
     --muted-color: #656d76;
-    --header-bg: #dedddd;
+    --header-bg: #ffffff;
 }
 
 /* Basic Styles */
@@ -207,9 +207,11 @@ a:hover {
     background-color: transparent;
     color: #e0e0e0;
     border: none;
-    width: 40px;
-    height: 40px;
+    border-radius: 0;
+    width: auto;
+    height: auto;
     font-size: 24px;
+    padding: 5px;
 }
 
 .hero-section .social-icon:hover {
