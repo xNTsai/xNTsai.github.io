@@ -208,24 +208,29 @@ a:hover {
 }
 
 .hero-section .social-icon {
-    background-color: transparent;
-    background: none;
+    background-color: transparent !important;
+    background: none !important;
     color: #e0e0e0;
-    border: none;
-    border-radius: 0;
-    width: auto;
-    height: auto;
+    border: none !important;
+    border-radius: 0 !important;
+    width: auto !important;
+    height: auto !important;
     font-size: 26px;
-    padding: 0;
-    box-shadow: none;
+    padding: 0 !important;
+    box-shadow: none !important;
 }
 
 .hero-section .social-icon:hover {
-    color: #58a6ff;
-    transform: scale(1.15);
-    box-shadow: none;
-    background-color: transparent;
+    color: #58a6ff !important;
+    transform: scale(1.15) !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    background: none !important;
     text-decoration: none;
+}
+
+.hero-section .social-icon i {
+    display: block;
 }
 
 /* Borders in hero section use LIGHT mode colors */
