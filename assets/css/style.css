@@ -611,13 +611,14 @@ h3 {
     z-index: 2;
 }
 
+.timeline-icon picture,
 .timeline-icon img {
-    width: 36px;
-    height: 36px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: none;
 }
+
 
 [data-theme="dark"] .timeline-icon {
     background-color: var(--bg-color);
@@ -818,7 +819,9 @@ h3 {
 }
 
 /* Image Loading Optimizations */
-.project-img {
+.project-img,
+.project-image picture,
+.project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
