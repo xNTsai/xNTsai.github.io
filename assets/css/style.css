@@ -708,7 +708,89 @@ h3 {
     text-decoration: underline;
 }
 
-/* Experience Entry Styles (fallback for projects page) */
+/* Project Entry Styles - Publications format */
+.project-entry {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    transition: border-color 0.3s ease;
+}
+
+.project-entry:last-child {
+    border-bottom: none;
+}
+
+.project-image {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-color);
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.2em;
+    border-bottom: none;
+    color: var(--heading-color);
+}
+
+.project-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.project-date {
+    color: var(--muted-color);
+    font-size: 0.9em;
+}
+
+.project-category {
+    color: var(--subheading-color);
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.project-links {
+    margin-bottom: 12px;
+}
+
+.project-links a {
+    color: var(--link-color);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+.project-highlights ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.project-highlights li {
+    margin-bottom: 6px;
+    color: var(--text-color);
+}
+
+/* Experience Entry Styles (fallback) */
 .experience-entry {
     margin-bottom: 30px;
     padding-bottom: 20px;
