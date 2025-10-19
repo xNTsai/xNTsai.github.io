@@ -684,6 +684,30 @@ h3 {
     margin-bottom: 8px;
 }
 
+.timeline-description h4 {
+    margin: 16px 0 8px 0;
+    font-size: 1.1em;
+    color: var(--heading-color);
+    border-bottom: none;
+}
+
+.timeline-description h4:first-child {
+    margin-top: 0;
+}
+
+.timeline-description p {
+    margin: 4px 0 8px 0;
+}
+
+.timeline-description a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.timeline-description a:hover {
+    text-decoration: underline;
+}
+
 /* Experience Entry Styles (fallback for projects page) */
 .experience-entry {
     margin-bottom: 30px;
