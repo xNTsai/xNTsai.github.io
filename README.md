@@ -1,7 +1,5 @@
 # Cheng-En Tsai — Personal Website
 
-A clean, simple personal website inspired by [Tsung-Min (Vincent) Pai's website](https://bai1026.github.io/). Built with vanilla HTML, CSS, and JavaScript.
-
 ## ✨ Features
 
 - **Simple & Clean Design** - Directly inspired by your senior's website
