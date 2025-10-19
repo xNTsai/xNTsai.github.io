@@ -182,6 +182,4 @@ Your site will be at: **https://xntsai.github.io/**
 - **Want to change something?** All code is simple HTML/CSS - just edit directly!
 
 ---
-
-**Design Credit:** Inspired by [Tsung-Min (Vincent) Pai](https://bai1026.github.io/)  
 **Built with:** Vanilla HTML, CSS, JavaScript
