@@ -790,6 +790,26 @@ h3 {
     color: var(--text-color);
 }
 
+.project-reference {
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border-color);
+}
+
+.project-reference small {
+    color: var(--muted-color);
+    font-size: 0.8em;
+}
+
+.project-reference a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.project-reference a:hover {
+    text-decoration: underline;
+}
+
 /* Experience Entry Styles (fallback) */
 .experience-entry {
     margin-bottom: 30px;
