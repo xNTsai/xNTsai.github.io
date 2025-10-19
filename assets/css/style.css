@@ -731,17 +731,6 @@ h3 {
     justify-content: center;
 }
 
-.project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    background-color: var(--card-color);
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
 .project-img:hover {
     transform: scale(1.05);
 }
@@ -826,6 +815,20 @@ h3 {
 
 .project-reference a:hover {
     text-decoration: underline;
+}
+
+/* Image Loading Optimizations */
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-color);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 /* Image Modal Styles */
