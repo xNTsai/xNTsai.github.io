@@ -634,7 +634,7 @@ h3 {
 }
 
 .timeline-content h3 {
-    margin: 0 0 8px 0;
+    margin: 0 0 4px 0;
     font-size: 1.3em;
     border-bottom: none;
     color: var(--heading-color);
@@ -643,7 +643,7 @@ h3 {
 
 .timeline-meta {
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .timeline-meta .company {
