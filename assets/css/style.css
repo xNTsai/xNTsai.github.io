@@ -582,20 +582,17 @@ h3 {
     content: '';
     position: absolute;
     left: 16px;
-    top: 48px;
-    bottom: 0;
+    top: 16px;
+    bottom: 16px;
     width: 2px;
     background-color: var(--border-color);
+    z-index: 1;
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
     margin-left: 30px;
-}
-
-.timeline-item:last-child .timeline-icon::after {
-    display: none;
 }
 
 .timeline-icon {
@@ -612,17 +609,6 @@ h3 {
     color: #ffffff;
     font-size: 14px;
     z-index: 2;
-}
-
-.timeline-icon::after {
-    content: '';
-    position: absolute;
-    top: 32px;
-    left: 15px;
-    width: 2px;
-    height: 40px;
-    background-color: var(--border-color);
-    z-index: 1;
 }
 
 .timeline-icon img {
