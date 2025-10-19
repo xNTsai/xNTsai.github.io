@@ -575,15 +575,15 @@ h3 {
     list-style: none;
     padding: 0;
     margin: 30px 0;
-    margin-left: 20px;
+    margin-left: 60px;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 0px;
-    top: 16px;
-    bottom: 16px;
+    left: -20px;
+    top: 20px;
+    bottom: 20px;
     width: 2px;
     background-color: var(--border-color);
     z-index: 1;
@@ -592,12 +592,12 @@ h3 {
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
-    margin-left: 30px;
+    margin-left: 0px;
 }
 
 .timeline-icon {
     position: absolute;
-    left: -40px;
+    left: -60px;
     display: flex;
     align-items: center;
     justify-content: center;
