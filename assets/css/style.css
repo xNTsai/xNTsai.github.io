@@ -638,6 +638,7 @@ h3 {
     font-size: 1.3em;
     border-bottom: none;
     color: var(--heading-color);
+    padding-top: 4px;
 }
 
 .timeline-meta {
