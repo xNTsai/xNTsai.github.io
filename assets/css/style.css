@@ -575,7 +575,17 @@ h3 {
     list-style: none;
     padding: 0;
     margin: 30px 0;
-    border-left: 2px solid var(--border-color);
+    margin-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--border-color);
 }
 
 .timeline-item {
@@ -586,7 +596,7 @@ h3 {
 
 .timeline-icon {
     position: absolute;
-    left: -42px;
+    left: -50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -598,6 +608,13 @@ h3 {
     color: #ffffff;
     font-size: 14px;
     z-index: 1;
+}
+
+.timeline-icon img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 [data-theme="light"] .timeline-icon {
