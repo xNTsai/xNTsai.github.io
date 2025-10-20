@@ -794,13 +794,18 @@ h3 {
 }
 
 .project-links a:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 0;
 }
 
 .project-links a:not(:last-child) + a::before {
-    content: " | ";
+    content: "";
+}
+
+.project-links .separator {
     color: var(--muted-color);
-    margin-right: 8px;
+    margin: 0 8px;
+    text-decoration: none;
+    pointer-events: none;
 }
 
 .project-highlights ul {
