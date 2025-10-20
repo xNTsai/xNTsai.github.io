@@ -790,9 +790,17 @@ h3 {
 }
 
 .project-links a:not(:last-child)::after {
+    content: "";
+}
+
+.project-links a:not(:last-child) {
+    margin-right: 8px;
+}
+
+.project-links a:not(:last-child) + a::before {
     content: " | ";
     color: var(--muted-color);
-    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .project-highlights ul {
