@@ -2,11 +2,11 @@
 :root {
     --bg-color: #222831;
     --text-color: #fafafa;
-    --link-color: #78acce;
-    --link-hover-color: #78acce;
+    --link-color: #78b3ce;
+    --link-hover-color: #78b3ce;
     --border-color: #d1d9e0;
     --heading-color: #f0f6fc;
-    --large-heading-color: #78acce;
+    --large-heading-color: #78b3ce;
     --subheading-color: #c9d1d9;
     --muted-color: #8b949e;
     --header-bg: #222831;
@@ -260,7 +260,7 @@ a:hover {
 .hero-section .social-icon {
     background-color: transparent !important;
     background: none !important;
-    color: #78acce;
+    color: #78b3ce;
     border: none !important;
     border-radius: 0 !important;
     width: auto !important;
@@ -271,7 +271,7 @@ a:hover {
 }
 
 .hero-section .social-icon:hover {
-    color: #78acce !important;
+    color: #78b3ce !important;
     transform: scale(1.15) !important;
     box-shadow: none !important;
     background-color: transparent !important;
