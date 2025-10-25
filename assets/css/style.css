@@ -2,8 +2,8 @@
 :root {
     --bg-color: #222831;
     --text-color: #e0e0e0;
-    --link-color: #58a6ff;
-    --link-hover-color: #79c0ff;
+    --link-color: #dfd0b8;
+    --link-hover-color: #dfd0b8;
     --border-color: #30363d;
     --heading-color: #f0f6fc;
     --large-heading-color: #dfd0b8;
@@ -16,8 +16,8 @@
 [data-theme="light"] {
     --bg-color: #fdfdfd;
     --text-color: #24292f;
-    --link-color: #0969da;
-    --link-hover-color: #0550ae;
+    --link-color: #78acce;
+    --link-hover-color: #78acce;
     --border-color: #d1d9e0;
     --heading-color: #1f2328;
     --large-heading-color: #78acce;
@@ -44,11 +44,12 @@ body {
 a {
     color: var(--link-color);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, font-weight 0.3s ease;
 }
 a:hover {
     text-decoration: underline;
     color: var(--link-hover-color);
+    font-weight: bold;
 }
 
 /* Header - HugoBox Style */
