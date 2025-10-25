@@ -1,7 +1,7 @@
 /* CSS Variables for Dark Theme (Default) */
 :root {
     --bg-color: #222831;
-    --text-color: #e0e0e0;
+    --text-color: #f0f0f0;
     --link-color: #dfd0b8;
     --link-hover-color: #dfd0b8;
     --border-color: #30363d;
@@ -292,10 +292,10 @@ a:hover {
     display: block;
 }
 
-/* Borders in hero section use LIGHT mode colors */
+/* Borders in hero section use theme colors */
 .hero-section h2,
 .hero-section h3 {
-    border-color: #d1d9e0;
+    border-color: var(--border-color);
 }
 
 /* Button in hero section uses theme colors */
@@ -309,6 +309,12 @@ a:hover {
     background-color: var(--link-hover-color);
     border-color: var(--link-hover-color);
     font-weight: bold;
+}
+
+.hero-section .btn-download:hover,
+.hero-section .btn-download:hover * {
+    color: var(--bg-color) !important;
+    text-decoration: none !important;
 }
 
 /* Main Content */
@@ -477,6 +483,12 @@ h3 {
     transform: translateY(-1px);
     text-decoration: none;
     font-weight: bold;
+}
+
+.btn-download:hover,
+.btn-download:hover * {
+    color: var(--bg-color) !important;
+    text-decoration: none !important;
 }
 
 .btn-download i {
