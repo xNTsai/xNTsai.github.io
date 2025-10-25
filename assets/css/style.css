@@ -10,6 +10,7 @@
     --subheading-color: #c9d1d9;
     --muted-color: #8b949e;
     --header-bg: #222831;
+    --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Light Theme Variables */
@@ -24,6 +25,7 @@
     --subheading-color: #656d76;
     --muted-color: #656d76;
     --header-bg: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Basic Styles */
@@ -59,7 +61,8 @@ a:hover {
     z-index: 100;
     background-color: var(--header-bg);
     border-bottom: 2px solid var(--border-color);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header-container {
