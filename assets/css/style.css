@@ -190,70 +190,61 @@ a:hover {
     font-size: 1em;
 }
 
-/* Hero Section with Background */
+/* Hero Section */
 .hero-section {
     position: relative;
     background-color: var(--bg-color);
-    background-image: url('../../stacked-peaks.svg');
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
     padding: 40px 0 60px;
     margin-bottom: 40px;
-    filter: brightness(1);
-}
-
-/* Always use dark mode text colors in hero section */
-.hero-section {
-    color: #e0e0e0;
+    color: var(--text-color);
 }
 
 .hero-section h1,
 .hero-section h2,
 .hero-section h3 {
-    color: #f0f6fc;
+    color: var(--heading-color);
 }
 
 .hero-section .subtitle,
 .hero-section .institution {
-    color: #c9d1d9;
+    color: var(--subheading-color);
 }
 
 .hero-section a {
-    color: #ffffff;
+    color: var(--link-color);
 }
 
 .hero-section a:hover {
-    color: #79c0ff;
+    color: var(--link-hover-color);
     text-decoration: underline;
 }
 
 /* Interests/Education section text colors in hero */
 .hero-section .two-column-section ul li::before {
-    color: #58a6ff;
+    color: var(--link-color);
 }
 
 .hero-section strong {
-    color: #f0f6fc;
+    color: var(--heading-color);
 }
 
-/* Profile title in hero uses white colors */
+/* Profile title in hero */
 .hero-section .portrait-title h3 {
-    color: #ffffff;
+    color: var(--heading-color);
     border-bottom: none;
 }
 
 .hero-section .portrait-title .institution a {
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 .hero-section .portrait-title .institution a:hover {
-    color: #79c0ff;
+    color: var(--link-hover-color);
     text-decoration: underline;
 }
 
 .hero-section .profile-pic {
-    border-color: #30363d;
+    border-color: var(--border-color);
 }
 
 /* Social icons in hero use HugoBox style - pure icons, no background */
