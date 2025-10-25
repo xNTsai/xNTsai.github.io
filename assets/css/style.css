@@ -13,7 +13,7 @@
 
 /* Light Theme Variables */
 [data-theme="light"] {
-    --bg-color: #f5efe6;
+    --bg-color: #fbf8ef;
     --text-color: #24292f;
     --link-color: #0969da;
     --link-hover-color: #0550ae;
@@ -21,7 +21,7 @@
     --heading-color: #1f2328;
     --subheading-color: #656d76;
     --muted-color: #656d76;
-    --header-bg: #f5efe6;
+    --header-bg: #fbf8ef;
 }
 
 /* Basic Styles */
