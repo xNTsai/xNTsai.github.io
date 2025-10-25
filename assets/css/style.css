@@ -255,7 +255,7 @@ a:hover {
 .hero-section .social-icon {
     background-color: transparent !important;
     background: none !important;
-    color: #ffffff;
+    color: #DFD0B8;
     border: none !important;
     border-radius: 0 !important;
     width: auto !important;
@@ -266,12 +266,21 @@ a:hover {
 }
 
 .hero-section .social-icon:hover {
-    color: #ffffff !important;
+    color: #DFD0B8 !important;
     transform: scale(1.15) !important;
     box-shadow: none !important;
     background-color: transparent !important;
     background: none !important;
     text-decoration: none;
+}
+
+/* Light theme social icon colors */
+[data-theme="light"] .hero-section .social-icon {
+    color: #78B3CE !important;
+}
+
+[data-theme="light"] .hero-section .social-icon:hover {
+    color: #78B3CE !important;
 }
 
 .hero-section .social-icon i {
@@ -342,8 +351,8 @@ h3 {
 }
 
 .profile-pic {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 15px;
