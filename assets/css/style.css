@@ -5,7 +5,8 @@
     --link-color: #58a6ff;
     --link-hover-color: #79c0ff;
     --border-color: #30363d;
-    --heading-color: #f0f6fc;
+    /* --heading-color: #f0f6fc; */
+    --heading-color: #dfd0b8;
     --subheading-color: #c9d1d9;
     --muted-color: #8b949e;
     --header-bg: #222831;
@@ -18,7 +19,8 @@
     --link-color: #0969da;
     --link-hover-color: #0550ae;
     --border-color: #d1d9e0;
-    --heading-color: #1f2328;
+    /* --heading-color: #1f2328; */
+    --heading-color: #78b3ce;
     --subheading-color: #656d76;
     --muted-color: #656d76;
     --header-bg: #fdfdfd;
