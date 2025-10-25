@@ -1,12 +1,12 @@
 /* CSS Variables for Dark Theme (Default) */
 :root {
     --bg-color: #222831;
-    --text-color: #f0f0f0;
-    --link-color: #dfd0b8;
-    --link-hover-color: #dfd0b8;
+    --text-color: #fafafa;
+    --link-color: #dcd7c9;
+    --link-hover-color: #dcd7c9;
     --border-color: #d1d9e0;
     --heading-color: #f0f6fc;
-    --large-heading-color: #dfd0b8;
+    --large-heading-color: #dcd7c9;
     --subheading-color: #c9d1d9;
     --muted-color: #8b949e;
     --header-bg: #222831;
@@ -260,7 +260,7 @@ a:hover {
 .hero-section .social-icon {
     background-color: transparent !important;
     background: none !important;
-    color: #DFD0B8;
+    color: #dcd7c9;
     border: none !important;
     border-radius: 0 !important;
     width: auto !important;
@@ -271,7 +271,7 @@ a:hover {
 }
 
 .hero-section .social-icon:hover {
-    color: #DFD0B8 !important;
+    color: #dcd7c9 !important;
     transform: scale(1.15) !important;
     box-shadow: none !important;
     background-color: transparent !important;
