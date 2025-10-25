@@ -1,6 +1,6 @@
 /* CSS Variables for Dark Theme (Default) */
 :root {
-    --bg-color: #000000;
+    --bg-color: #222831;
     --text-color: #e0e0e0;
     --link-color: #58a6ff;
     --link-hover-color: #79c0ff;
@@ -8,12 +8,12 @@
     --heading-color: #f0f6fc;
     --subheading-color: #c9d1d9;
     --muted-color: #8b949e;
-    --header-bg: #000000;
+    --header-bg: #222831;
 }
 
 /* Light Theme Variables */
 [data-theme="light"] {
-    --bg-color: #ffffff;
+    --bg-color: #f5efe6;
     --text-color: #24292f;
     --link-color: #0969da;
     --link-hover-color: #0550ae;
@@ -21,7 +21,7 @@
     --heading-color: #1f2328;
     --subheading-color: #656d76;
     --muted-color: #656d76;
-    --header-bg: #ffffff;
+    --header-bg: #f5efe6;
 }
 
 /* Basic Styles */
