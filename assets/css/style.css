@@ -20,7 +20,7 @@
     --link-hover-color: #0550ae;
     --border-color: #d1d9e0;
     --heading-color: #1f2328;
-    --large-heading-color: #78b3ce;
+    --large-heading-color: #6D94C5;
     --subheading-color: #656d76;
     --muted-color: #656d76;
     --header-bg: #fdfdfd;
@@ -280,11 +280,11 @@ a:hover {
 
 /* Light theme social icon colors */
 [data-theme="light"] .hero-section .social-icon {
-    color: #78B3CE !important;
+    color: #6D94C5 !important;
 }
 
 [data-theme="light"] .hero-section .social-icon:hover {
-    color: #78B3CE !important;
+    color: #6D94C5 !important;
 }
 
 .hero-section .social-icon i {
