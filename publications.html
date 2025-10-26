@@ -51,7 +51,7 @@
 
       <div class="publication-entry">
         <div class="publication-image">
-          <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&q=80&auto=format&fit=crop" alt="Quantum Federated Learning">
+          <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&q=80&auto=format&fit=crop" alt="Quantum Federated Learning" class="publication-img" loading="lazy" onclick="openImageModal('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80&auto=format&fit=crop', 'Quantum Federated Learning')">
         </div>
         <div class="publication-details">
           <h3>LossAgg-QFL: Communication-Efficient Quantum Federated Learning via Loss Aggregation</h3>
@@ -72,7 +72,7 @@
 
       <div class="publication-entry">
         <div class="publication-image">
-          <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=400&q=80&auto=format&fit=crop" alt="QSyn Framework">
+          <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=400&q=80&auto=format&fit=crop" alt="QSyn Framework" class="publication-img" loading="lazy" onclick="openImageModal('https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=800&q=80&auto=format&fit=crop', 'QSyn Framework')">
         </div>
         <div class="publication-details">
           <h3>QSyn: A Developer-Friendly Quantum Circuit Synthesis Framework for NISQ Era and Beyond</h3>
@@ -98,5 +98,37 @@
       <p>&copy; 2025 Cheng-En Tsai</p>
     </footer>
   </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <div class="image-modal-content" onclick="event.stopPropagation()">
+      <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+      <img id="modalImage" src="" alt="">
+    </div>
+  </div>
+
+  <script>
+    function openImageModal(imageSrc, imageAlt) {
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+      modalImage.src = imageSrc;
+      modalImage.alt = imageAlt;
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    function closeImageModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.remove('open');
+      document.body.style.overflow = 'auto'; // Restore scrolling
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeImageModal();
+      }
+    });
+  </script>
 </body>
 </html>

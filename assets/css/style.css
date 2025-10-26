@@ -558,40 +558,77 @@ h3 {
 /* Publication Entry Styles */
 .publication-entry {
     display: flex;
-    gap: 25px;
-    margin-bottom: 40px;
-}
-.publication-image {
-    flex: 1;
-    max-width: 220px;
-}
-.publication-image img {
-    width: 100%;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
     transition: border-color 0.3s ease;
 }
-.publication-details {
-    flex: 3;
-}
-.publication-details h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-    font-size: 1.4em;
+
+.publication-entry:last-child {
     border-bottom: none;
 }
+
+.publication-image {
+    flex-shrink: 0;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publication-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-color);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.publication-img:hover {
+    transform: scale(1.05);
+}
+
+.publication-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.publication-details h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.4em;
+    border-bottom: none;
+    color: var(--heading-color);
+}
+
 .publication-details .authors {
     font-style: italic;
     color: var(--muted-color);
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     transition: color 0.3s ease;
 }
+
 .publication-details .venue {
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
+
+.publication-details .links {
+    margin-bottom: 8px;
+}
+
 .publication-details .links a {
     margin-right: 15px;
+}
+
+.publication-details p {
+    margin-top: 8px;
 }
 
 /* Timeline Styles - LinkedIn/HugoBox format */
@@ -1024,5 +1061,7 @@ footer {
     
     .publication-image {
         max-width: 100%;
+        width: 100%;
+        height: auto;
     }
 }
