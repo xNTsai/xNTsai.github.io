@@ -17,11 +17,11 @@
 [data-theme="light"] {
     --bg-color: #fdfdfd;
     --text-color: #24292f;
-    --link-color: #78acce;
-    --link-hover-color: #78acce;
+    --link-color: #5682B1;
+    --link-hover-color: #5682B1;
     --border-color: #d1d9e0;
     --heading-color: #1f2328;
-    --large-heading-color: #78acce;
+    --large-heading-color: #5682B1;
     --subheading-color: #656d76;
     --muted-color: #656d76;
     --header-bg: #fdfdfd;
@@ -282,11 +282,11 @@ a:hover {
 
 /* Light theme social icon colors */
 [data-theme="light"] .hero-section .social-icon {
-    color: #78acce !important;
+    color: #5682B1 !important;
 }
 
 [data-theme="light"] .hero-section .social-icon:hover {
-    color: #78acce !important;
+    color: #5682B1 !important;
 }
 
 .hero-section .social-icon i {
