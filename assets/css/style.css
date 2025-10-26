@@ -79,7 +79,7 @@ a:hover {
 .brand {
     font-size: 1.3em;
     font-weight: 700;
-    color: var(--heading-color);
+    color: var(--link-color);
     text-decoration: none;
     white-space: nowrap;
     flex-shrink: 0;
@@ -206,11 +206,9 @@ a:hover {
 }
 
 .hero-section h1,
-.hero-section h2 {
-    color: var(--large-heading-color);
-}
+.hero-section h2,
 .hero-section h3 {
-    color: var(--heading-color);
+    color: var(--large-heading-color);
 }
 
 .hero-section .subtitle,
