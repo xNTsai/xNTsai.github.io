@@ -627,6 +627,13 @@ h3 {
     margin-right: 15px;
 }
 
+.publication-details .links .separator {
+    color: var(--muted-color);
+    margin: 0 8px;
+    text-decoration: none;
+    pointer-events: none;
+}
+
 .publication-details p {
     margin-top: 8px;
 }
