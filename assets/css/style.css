@@ -200,8 +200,8 @@ a:hover {
 .hero-section {
     position: relative;
     background-color: var(--bg-color);
-    padding: 40px 0 30px;
-    margin-bottom: 20px;
+    padding: 40px 0 20px;
+    margin-bottom: 10px;
     color: var(--text-color);
 }
 
