@@ -135,7 +135,7 @@
         <div class="publication-image">
           <picture>
             <source srcset="assets/img/FTQCS.webp" type="image/webp">
-            <img src="assets/img/FTQCS.png" alt="Fault-Tolerant Quantum Circuit Synthesis" class="publication-img" loading="lazy">
+            <img src="assets/img/FTQCS.png" alt="Fault-Tolerant Quantum Circuit Synthesis" class="publication-img" loading="lazy" onclick="openImageModal('assets/img/FTQCS.webp', 'Fault-Tolerant Quantum Circuit Synthesis')">
           </picture>
         </div>
         <div class="publication-details">
@@ -159,7 +159,7 @@
         <div class="publication-image">
           <picture>
             <source srcset="assets/img/LossAggQFL.webp" type="image/webp">
-            <img src="assets/img/LossAggQFL.png" alt="Quantum Federated Learning" class="publication-img" loading="lazy">
+            <img src="assets/img/LossAggQFL.png" alt="Quantum Federated Learning" class="publication-img" loading="lazy" onclick="openImageModal('assets/img/LossAggQFL.webp', 'Quantum Federated Learning')">
           </picture>
         </div>
         <div class="publication-details">
@@ -183,7 +183,7 @@
         <div class="publication-image">
           <picture>
             <source srcset="assets/img/Qsyn.webp" type="image/webp">
-            <img src="assets/img/Qsyn.jpg" alt="QSyn Framework" class="publication-img" loading="lazy">
+            <img src="assets/img/Qsyn.jpg" alt="QSyn Framework" class="publication-img" loading="lazy" onclick="openImageModal('assets/img/Qsyn.webp', 'QSyn Framework')">
           </picture>
         </div>
         <div class="publication-details">
@@ -211,7 +211,7 @@
         <div class="project-image">
           <picture>
             <source srcset="assets/img/IEDA.webp" type="image/webp">
-            <img src="assets/img/IEDA.png" alt="Reinforcement Logic Optimization" class="project-img">
+            <img src="assets/img/IEDA.png" alt="Reinforcement Logic Optimization" class="project-img" onclick="openImageModal('assets/img/IEDA.webp', 'Reinforcement Logic Optimization')">
           </picture>
         </div>
         <div class="project-content">
@@ -236,7 +236,7 @@
         <div class="project-image">
           <picture>
             <source srcset="assets/img/QIC.webp" type="image/webp">
-            <img src="assets/img/QIC.png" alt="T-Count Optimization Framework" class="project-img">
+            <img src="assets/img/QIC.png" alt="T-Count Optimization Framework" class="project-img" onclick="openImageModal('assets/img/QIC.webp', 'T-Count Optimization Framework')">
           </picture>
         </div>
         <div class="project-content">
@@ -261,7 +261,7 @@
         <div class="project-image">
           <picture>
             <source srcset="assets/img/DLCV.webp" type="image/webp">
-            <img src="assets/img/DLCV.png" alt="Multimodal Perception of Corner Cases in Autonomous Driving" class="project-img" loading="lazy">
+            <img src="assets/img/DLCV.png" alt="Multimodal Perception of Corner Cases in Autonomous Driving" class="project-img" loading="lazy" onclick="openImageModal('assets/img/DLCV.webp', 'Multimodal Perception of Corner Cases in Autonomous Driving')">
           </picture>
         </div>
         <div class="project-content">
@@ -291,5 +291,37 @@
       <p>&copy; 2025 Cheng-En Tsai</p>
     </footer>
   </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <div class="image-modal-content" onclick="event.stopPropagation()">
+      <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+      <img id="modalImage" src="" alt="">
+    </div>
+  </div>
+
+  <script>
+    function openImageModal(imageSrc, imageAlt) {
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+      modalImage.src = imageSrc;
+      modalImage.alt = imageAlt;
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    function closeImageModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.remove('open');
+      document.body.style.overflow = 'auto'; // Restore scrolling
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeImageModal();
+      }
+    });
+  </script>
 </body>
 </html>
