@@ -103,7 +103,7 @@
         </div>
       </div>
 
-      <div class="project-entry">
+      <!-- <div class="project-entry">
         <div class="project-image">
           <picture>
             <source srcset="assets/img/DSD.webp" type="image/webp">
@@ -123,7 +123,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="project-entry">
         <div class="project-image">
@@ -133,18 +133,102 @@
           </picture>
         </div>
         <div class="project-content">
-          <h3>Decomposing a Unitary Matrix into Basic Quantum Gate Set</h3>
+          <h3>Quantum Circuit Enumeration with Unitary Matrixt</h3>
           <div class="project-meta">
             <span class="project-date">Nov 2023 – Jan 2024</span>
             <span class="project-category">Quantum Design Automation</span>
           </div>
           <div class="project-links">
-            <a href="https://drive.google.com/file/d/1ZB7xm-SH2Tutn5B95l7sG-xESJv1Yh4Z/view" target="_blank"><i class="fas fa-file-pdf"></i> Report</a>
+            <a href="https://drive.google.com/file/d/1hKSJdfJJE7QcMlzBimcceXsReiIqhzvO/view?usp=sharing" target="_blank"><i class="fas fa-file-pdf"></i> Report</a>
           </div>
           <div class="project-highlights">
             <ul>
               <li>Read in a valid unitary matrix, converting the tensor into several 2-level matrices.</li>
               <li>Use gray-code synthesis to map the matrices into quantum gates, decomposing and optimizing to get the final quantum circuit with the given basic gate sets.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-entry">
+        <div class="project-image">
+          <picture>
+            <source srcset="assets/img/LightDance.webp" type="image/webp">
+            <img src="assets/img/LightDance.PNG" alt="NTUEE LightDance" class="project-img" loading="lazy" onclick="openImageModal('assets/img/LightDance.webp', 'NTUEE LightDance')">
+          </picture>
+        </div>
+        <div class="project-content">
+          <h3>NTUEE LightDance</h3>
+          <div class="project-meta">
+            <span class="project-date">Oct 2022 – Mar 2024</span>
+            <span class="project-category">Hardware Group: Manages electrical-related hardware & LightDancer</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/NTUEELightDance" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <span class="separator">|</span>
+            <a href="https://www.youtube.com/watch?v=HviYqvcldPU&feature=youtu.be" target="_blank"><i class="fab fa-youtube"></i> Video 2024</a>
+            <span class="separator">|</span>
+            <a href="https://youtu.be/u10oLI85Ip0?si=cfcfmmmDbxisJjKd" target="_blank"><i class="fab fa-youtube"></i> Video 2023</a>
+          </div>
+          <div class="project-highlights">
+            <ul>
+              <li>Established a C/C++ library for the communication between ATTiny85 board and RPI.</li>
+              <li>Constructed the full data path from the latch to the microcontroller and then to the Raspberry Pi for WS2812 LED strips, and from the PCA9955 IC to the Raspberry Pi for optical fiber.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project-entry">
+        <div class="project-image">
+          <picture>
+            <source srcset="assets/img/VLSItesting.webp" type="image/webp">
+            <img src="assets/img/VLSItesting.png" alt="Improved SAT-based ATPG on ABC" class="project-img" loading="lazy" onclick="openImageModal('assets/img/VLSItesting.webp', 'Improved SAT-based ATPG on ABC')">
+          </picture>
+        </div>
+        <div class="project-content">
+          <h3>Improved SAT-based ATPG on ABC: Incremental PBO with better compaction</h3>
+          <div class="project-meta">
+            <span class="project-date">Apr 2025 – Jun 2025</span>
+            <span class="project-category">VLSI Testing</span>
+          </div>
+          <div class="project-links">
+            <a href="https://drive.google.com/file/d/1lvjtTGCyfBcApHLXBGKA-0nA-G1_AlG1/view?usp=sharing" target="_blank"><i class="fas fa-file-pdf"></i> Report</a>
+            <span class="separator">|</span>
+            <a href="https://github.com/xNTsai/SAT-based-ATPG" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div class="project-highlights">
+            <ul>
+              <li>Developed an incremental SAT-based ATPG framework using Pseudo-Boolean Optimization (PBO) to minimize pattern count and runtime, achieving improved compaction efficiency.</li>
+              <li>Encoded complete fault lists into a single SAT instance with structural Boolean objectives, enabling selective pattern generation and extensibility to fault diagnosis.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-entry">
+        <div class="project-image">
+          <picture>
+            <source srcset="assets/img/DSD.webp" type="image/webp">
+            <img src="assets/img/DSD.png" alt="RISC-V CPU Core" class="project-img" onclick="openImageModal('assets/img/DSD.webp', 'RISC-V CPU Core')">
+          </picture>
+        </div>
+        <div class="project-content">
+          <h3>Pipelined RISC-V Processor</h3>
+          <div class="project-meta">
+            <span class="project-date">Oct 2025 – Nov 2025</span>
+            <span class="project-category">Digital System Design</span>
+          </div>
+          <div class="project-links">
+            <a href="https://drive.google.com/file/d/1lvjtTGCyfBcApHLXBGKA-0nA-G1_AlG1/view?usp=sharing" target="_blank"><i class="fas fa-file-pdf"></i> Report</a>
+            <span class="separator">|</span>
+            <a href="https://github.com/xNTsai/SAT-based-ATPG" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div class="project-highlights">
+            <ul>
+              <li>Designed a 32-bit, 5-stage pipelined RISC-V processor supporting the RV32I base and C extension, integrating instruction/data caches and custom control logic for efficient pipeline execution.</li>
+              <li>Integrated a decompression unit for 16-bit instructions and a two-stage pipelined multiplier, improving execution efficiency by up to 37% with minimal area overhead.</li>
             </ul>
           </div>
         </div>
@@ -181,35 +265,6 @@
       <div class="project-entry">
         <div class="project-image">
           <picture>
-            <source srcset="assets/img/LightDance.webp" type="image/webp">
-            <img src="assets/img/LightDance.PNG" alt="NTUEE LightDance" class="project-img" loading="lazy" onclick="openImageModal('assets/img/LightDance.webp', 'NTUEE LightDance')">
-          </picture>
-        </div>
-        <div class="project-content">
-          <h3>NTUEE LightDance</h3>
-          <div class="project-meta">
-            <span class="project-date">Oct 2022 – Mar 2024</span>
-            <span class="project-category">Hardware Group: Manages electrical-related hardware & LightDancer: Design the entire performance</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/NTUEELightDance" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <span class="separator">|</span>
-            <a href="https://www.youtube.com/watch?v=HviYqvcldPU&feature=youtu.be" target="_blank"><i class="fab fa-youtube"></i> Video 2024</a>
-            <span class="separator">|</span>
-            <a href="https://youtu.be/u10oLI85Ip0?si=cfcfmmmDbxisJjKd" target="_blank"><i class="fab fa-youtube"></i> Video 2023</a>
-          </div>
-          <div class="project-highlights">
-            <ul>
-              <li>Established a C/C++ library for the communication between ATTiny85 board and RPI.</li>
-              <li>Constructed the full data path from the latch to the microcontroller and then to the Raspberry Pi for WS2812 LED strips, and from the PCA9955 IC to the Raspberry Pi for optical fiber.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-entry">
-        <div class="project-image">
-          <picture>
             <source srcset="assets/img/EmbeddedLab.webp" type="image/webp">
             <img src="assets/img/EmbeddedLab.JPG" alt="Smart Meeting Cube" class="project-img" loading="lazy" onclick="openImageModal('assets/img/EmbeddedLab.webp', 'Smart Meeting Cube')">
           </picture>
@@ -227,32 +282,6 @@
             <ul>
               <li>Designed a Smart Meeting Cube that streamlines meeting management tasks such as attendance, voting, and speaking requests through interactive cube rotations.</li>
               <li>Implemented face recognition and real-time communication between STM32 and Raspberry Pi using WebSocket.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-entry">
-        <div class="project-image">
-          <picture>
-            <source srcset="assets/img/VLSItesting.webp" type="image/webp">
-            <img src="assets/img/VLSItesting.png" alt="Improved SAT-based ATPG on ABC" class="project-img" loading="lazy" onclick="openImageModal('assets/img/VLSItesting.webp', 'Improved SAT-based ATPG on ABC')">
-          </picture>
-        </div>
-        <div class="project-content">
-          <h3>Improved SAT-based ATPG on ABC: Incremental PBO with better compaction</h3>
-          <div class="project-meta">
-            <span class="project-date">TBD</span>
-            <span class="project-category">VLSI Testing</span>
-          </div>
-          <div class="project-links">
-            <a href="https://drive.google.com/file/d/1lvjtTGCyfBcApHLXBGKA-0nA-G1_AlG1/view?usp=sharing" target="_blank"><i class="fas fa-file-pdf"></i> Report</a>
-            <span class="separator">|</span>
-            <a href="https://github.com/xNTsai/SAT-based-ATPG" target="_blank"><i class="fab fa-github"></i> Code</a>
-          </div>
-          <div class="project-highlights">
-            <ul>
-              <li>Details to be provided</li>
             </ul>
           </div>
         </div>
