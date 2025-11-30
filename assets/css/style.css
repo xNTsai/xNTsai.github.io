@@ -1079,4 +1079,14 @@ footer {
         width: 100%;
         height: auto;
     }
+    
+    .project-entry {
+        flex-direction: column;
+    }
+    
+    .project-image {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
 }
